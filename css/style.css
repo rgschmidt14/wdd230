@@ -1,0 +1,27 @@
+/*All of the Generic stuff*/
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat&display=swap');
+
+body {
+    background-color: white;
+    font-family: "Open Sans", sans-serif;
+    padding: 5px 25px;
+    font-size: 18px;
+    margin: auto;
+    color: #444;
+    min-width: 600px;
+    max-width: 1200px;
+    background-color: #FFFAFF;
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    color: #001A03;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.4em;
+  }
+  img {
+    max-width: 100%;
+  }
