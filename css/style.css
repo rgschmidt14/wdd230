@@ -25,3 +25,13 @@ body {
   img {
     max-width: 100%;
   }
+
+  .horizontal-line {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px;
+    height: 1px;
+    width: 100%;
+    grid-column: 1/5;
+    background: #2C73E5;
+  }
