@@ -35,3 +35,8 @@ body {
     grid-column: 1/5;
     background: #2C73E5;
   }
+
+  header {
+      display: grid;
+      grid-template-columns: 1em, 3em;
+  }
