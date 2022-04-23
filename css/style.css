@@ -40,3 +40,6 @@ body {
       display: grid;
       grid-template-columns: 1em, 3em;
   }
+  header img {
+      width: 200px
+  }
