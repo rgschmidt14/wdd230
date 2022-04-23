@@ -38,8 +38,9 @@ body {
 
   header {
       display: grid;
-      grid-template-columns: 1em, 3em;
+      grid-template-columns: 1fr 3fr;
   }
+  
   header img {
       width: 200px
   }
