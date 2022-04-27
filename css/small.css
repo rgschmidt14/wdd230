@@ -14,7 +14,7 @@ body {
     margin: auto;
     color: #444;
     /* min-width: 300px; */
-    max-width: 600px;
+    /*max-width: 600px; changing for small medium large*/
     background-color: #FFFAFF;
   }
   h1, h2, h3, h4, h5, h6, p {
