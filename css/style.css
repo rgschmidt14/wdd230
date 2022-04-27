@@ -6,10 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 
-
 body {
     background-color: white;
-    font-family: 'VT323', monospace;
+    font-family: "Open Sans", sans-serif;
     padding: 5px 25px;
     font-size: 18px;
     margin: auto;
@@ -22,7 +21,8 @@ body {
     color: #001A03;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Cormorant Garamond", serif;
+    /*font-family: "Cormorant Garamond", serif;*/
+    font-family: 'VT323', monospace;
   }
   img {
     max-width: 100%;
