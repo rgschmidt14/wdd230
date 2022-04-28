@@ -9,65 +9,67 @@
 
 /*All pages*/
 body {
-    background-color: white;
-    font-family: "Open Sans", sans-serif;
-    padding: 5px 25px;
-    font-size: 18px;
-    color: #444;
-    min-width: 300px;
-    /*max-width: 600px;*/
-    margin: auto;
-    background-color: rgb(245, 255, 245);
-  }
-  h1, h2, h3, h4, h5, h6, p {
-    color: #001A03;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    /*font-family: "Cormorant Garamond", serif;*/
-    font-family: 'VT323', monospace;
-  }
-  img {
-    max-width: 100%;
-  }
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  color: #444;
+  min-width: 300px;
+  /*max-width: 600px;*/
+  margin: auto;
+  background-color: rgb(245, 255, 245);
+}
+h1, h2, h3, h4, h5, h6, p {
+  color: #001A03;
+}
+h1, h2, h3, h4, h5, h6 {
+  /*font-family: "Cormorant Garamond", serif;*/
+  font-family: 'VT323', monospace;
+}
+img {
+  max-width: 100%;
+}
 
-  .horizontal-line {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border: 1px;
-    height: 1px;
-    width: 100%;
-    grid-column: 1/5;
-    background: #134492;
-  }
-
-
+.horizontal-line {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px;
+  height: 1px;
+  width: 100%;
+  grid-column: 1/5;
+  background: #134492;
+}
 
 
 
 
 
-  /*Index*/
-  #index-header-grid {
-      display: grid;
-      grid-template-columns: 1fr 37.5vw 50vw  1fr;
-      background-color: antiquewhite;
-      align-items: center;
-
-  }
-
-  #index-header-grid img {
-      max-width: 37.5vw;
-      grid-column: 2;
-      margin: 5px 5px 5px 5px;
-  }
-  #index-header-grid h1 {
-    margin-left: 10px;
-  }
 
 
+/*Index*/
+#index-header-grid {
+    display: grid;
+    grid-template-columns: 1fr 37.5vw 50vw  1fr;
+    background-color: antiquewhite;
+    align-items: center;
 
-  
+}
 
-  /*Lesson 2*/
+#index-header-grid img {
+    max-width: 37.5vw;
+    grid-column: 2;
+    margin: 5px 5px 5px 5px;
+}
+#index-header-grid h1 {
+  margin-left: 10px;
+}
 
 
+
+
+
+/*Lesson 2*/
+#design-principles-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
