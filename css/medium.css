@@ -1,14 +1,14 @@
 @media (min-width: 32.5em) {
-    .horizontal-line {
-        margin-top: 20px;
-        margin-bottom: 10px;
-        border: 20px;
-        height: 20px;
-        width: 100%;
-        grid-column: 1/5;
-        background: #2C73E5;
-      }
-    
-
+    body {
+        max-width: 32.5em;
+        margin: auto;
+    }
+   header img {
+       max-width: 12.1875em;
+   }
+   header {
+       grid-template-columns: 1fr 12.1875em 15em 1fr;
+       
+   }
 
 }
