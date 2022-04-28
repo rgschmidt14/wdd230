@@ -6,6 +6,8 @@
 /*@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');*/
 
 
+
+/*All pages*/
 body {
     background-color: white;
     font-family: "Open Sans", sans-serif;
@@ -38,7 +40,14 @@ body {
     background: #134492;
   }
 
-  header {
+
+
+
+
+
+
+  /*Index*/
+  #index-header-grid {
       display: grid;
       grid-template-columns: 1fr 37.5vw 50vw  1fr;
       background-color: antiquewhite;
@@ -46,11 +55,19 @@ body {
 
   }
 
-  header img {
+  #index-header-grid img {
       max-width: 37.5vw;
       grid-column: 2;
       margin: 5px 5px 5px 5px;
   }
-  header h1 {
+  #index-header-grid h1 {
     margin-left: 10px;
   }
+
+
+
+  
+
+  /*Lesson 2*/
+
+

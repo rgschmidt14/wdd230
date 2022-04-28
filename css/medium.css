@@ -3,10 +3,10 @@
         max-width: 32.5em;
         margin: auto;
     }
-   header img {
+   #index-header-grid img {
        max-width: 12.1875em;
    }
-   header {
+   #index-header-grid {
        grid-template-columns: 1fr 12.1875em 16.25em 1fr;
        
    }
