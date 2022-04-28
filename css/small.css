@@ -40,9 +40,9 @@ body {
 
   header {
       display: grid;
-      margin: 0px 10px 0px 10px;
       grid-template-columns: 1fr 37.5vw 50vw  1fr;
       background-color: antiquewhite;
+      align-items: center;
 
   }
 

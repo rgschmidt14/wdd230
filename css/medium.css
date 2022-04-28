@@ -7,7 +7,7 @@
        max-width: 12.1875em;
    }
    header {
-       grid-template-columns: 1fr 12.1875em 15em 1fr;
+       grid-template-columns: 1fr 12.1875em 16.25em 1fr;
        
    }
 
