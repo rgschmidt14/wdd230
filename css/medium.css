@@ -11,4 +11,10 @@
        
    }
 
+
+
+   /*lesson 2*/
+   #design-principles-main-grid {
+       grid-template-columns: 1fr 1fr;
+   }
 }
