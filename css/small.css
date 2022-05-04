@@ -77,6 +77,6 @@ img {
 /*Lesson 3*/
 
 #lesson3NavLinks {
-  
+  list-style-type: none;
   display: block;
 }
