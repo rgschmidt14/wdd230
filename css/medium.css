@@ -21,6 +21,7 @@
 
     /*Lesson 3*/
     #lesson3NavLinks {
+        list-style-type: none;
         display: flex;
         flex: 1 1 auto;
    }
