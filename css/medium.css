@@ -21,7 +21,7 @@
 
     /*Lesson 3*/
     body {
-        max-width: 100%
+        max-width: 100%;
     }
     #lesson3NavLinks {
         display: flex;
