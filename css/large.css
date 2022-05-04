@@ -1,8 +1,5 @@
 @media (min-width: 64em) {
 
-    body {
-        max-width: 64em;
-    }
    /*lesson 2*/
    #design-principles-main-grid {
        grid-template-columns: 1fr 1fr 1fr;
