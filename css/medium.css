@@ -1,7 +1,5 @@
 @media (min-width: 32.5em) {
-    body {
-        max-width: 1000px;
-    }
+    
    #index-header-grid img {
        max-width: 12.1875em;
    }
@@ -22,7 +20,7 @@
     
     #lesson3NavLinks {
         display: flex;
-        flex: 1 1 auto;
+        
    }
 
 }
