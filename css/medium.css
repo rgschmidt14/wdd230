@@ -20,6 +20,9 @@
 
 
     /*Lesson 3*/
+    body {
+        max-width: 100%
+    }
     #lesson3NavLinks {
         list-style-type: none;
         display: flex;
