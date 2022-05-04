@@ -73,3 +73,8 @@ img {
   display: grid;
   grid-template-columns: 1fr;
 }
+
+/*Lesson 3*/
+#lesson3NavLinks {
+  display: block;
+}
