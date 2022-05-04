@@ -1,8 +1,5 @@
 @media (min-width: 32.5em) {
-    body {
-        max-width: 32.5em;
-        margin: auto;
-    }
+    
    #index-header-grid img {
        max-width: 12.1875em;
    }
@@ -20,10 +17,7 @@
 
 
     /*Lesson 3*/
-    body {
-        max-width: 100%;
-        margin: auto;
-    }
+    
     #lesson3NavLinks {
         display: flex;
         flex: auto;
