@@ -79,4 +79,7 @@ img {
 #lesson3NavLinks {
   list-style-type: none;
   display: block;
+  text-align: center;
+  padding: 10px;
+  
 }
