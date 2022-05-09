@@ -48,3 +48,8 @@ img {
   text-decoration: none;
   margin: 5px;
 }
+
+#colorSchemeColorBlock {
+  width: 5em;
+  height: 5em;
+}
