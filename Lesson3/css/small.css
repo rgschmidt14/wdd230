@@ -77,6 +77,10 @@ header nav ul li {
   text-decoration: none;
 }
 
+#centerRoboto {
+  text-align:center
+}
+
 #colorSchemeGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
