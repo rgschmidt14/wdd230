@@ -8,6 +8,7 @@ body {
   max-width: max-content;
   margin: auto;
   background-color: whitesmoke;
+  
 }
 
 header {
@@ -20,6 +21,12 @@ main {
   border-width: 4em;
   border-radius: 5%;
 }
+
+.indentSection {
+  padding-left: 5%;
+}
+
+
 p {
   color: black;
 }
