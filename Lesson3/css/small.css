@@ -9,11 +9,16 @@ body {
   margin: auto;
   background-color: whitesmoke;
 }
-main {
-  border-color: #13B0D7;
+
+header {
   border-width: 1em;
   border-radius: 5%;
-  background-color: #13B0D7;
+}
+
+main {
+  border-color: #13B0D7;
+  border-width: 4em;
+  border-radius: 5%;
 }
 p {
   color: black;
