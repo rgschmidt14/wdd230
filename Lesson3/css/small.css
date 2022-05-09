@@ -11,6 +11,7 @@ body {
 }
 main {
   border-color: #13B0D7;
+  border-width: 1em;
   border-radius: 5%;
 }
 p {
