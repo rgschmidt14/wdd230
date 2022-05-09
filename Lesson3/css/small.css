@@ -37,6 +37,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
   color: #06356D;
 }
+h1 {
+  text-align: center;
+}
 img {
   max-width: 100%;
 }
@@ -78,7 +81,7 @@ header nav ul li {
 }
 
 #centerRoboto {
-  text-align:center
+  text-decoration: solid;
 }
 
 .betterHeightList {
