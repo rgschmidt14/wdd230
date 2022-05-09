@@ -1,18 +1,8 @@
 @media (min-width: 32.5em) {
     
-   #index-header-grid img {
-       max-width: 12.1875em;
-   }
-   #index-header-grid {
-       grid-template-columns: 1fr 12.1875em 16.25em 1fr;
-       
-   }
 
-
-
-   /*lesson 2*/
-   #design-principles-main-grid {
-       grid-template-columns: 1fr 1fr;
+   .sizePic {
+    width: 32.5em;
    }
 
 
