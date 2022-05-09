@@ -23,14 +23,13 @@ main {
 }
 
 .indentSection {
-  padding-left: 5%;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 5%;
 }
 
 
 p {
   color: black;
+  padding: 5%;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
