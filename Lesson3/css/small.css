@@ -57,28 +57,29 @@ img {
 .colorSchemeColorBlock {
   width: 5em;
   height: 5em;
+  
 }
 #cb1 {
   background-color: #00acd4;
-  color: white;
+  color: black;
 }
-#cb1 {
+#cb2 {
   background-color: #003469;
   color: white;
 }
-#cb1 {
+#cb3 {
   background-color: #71a1d6;
-  color: white;
+  color: black;
 }
-#cb1 {
+#cb4 {
   background-color: #febe10;
-  color: white;
+  color: black;
 }
-#cb1 {
+#cb5 {
   background-color: #939598;
-  color: white;
+  color: black;
 }
-#cb1 {
+#cb6 {
   background-color: #492365;
   color: white;
 }
