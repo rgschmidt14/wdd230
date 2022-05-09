@@ -5,6 +5,6 @@
        grid-template-columns: 1fr 1fr 1fr;
    }
    body {
-       max-width: min-content;
+       max-width: 64em;
    }
 }
