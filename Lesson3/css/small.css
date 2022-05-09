@@ -1,0 +1,92 @@
+/*All of the Generic stuff*/
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');*/
+
+
+
+/*All pages*/
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  color: #444;
+  min-width: 300px;
+  /*max-width: 600px;*/
+  max-width: max-content;
+  margin: auto;
+  background-color: rgb(245, 255, 245);
+}
+main {
+  background-color: rgb(38, 200, 60);
+}
+h1, h2, h3, h4, h5, h6, p {
+  color: #001A03;
+}
+h1, h2, h3, h4, h5, h6 {
+  /*font-family: "Cormorant Garamond", serif;*/
+  font-family: 'VT323', monospace;
+}
+img {
+  max-width: 100%;
+}
+
+.horizontal-line {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px;
+  height: 1px;
+  width: 100%;
+  grid-column: 1/5;
+  background: #134492;
+}
+
+
+
+
+
+
+
+/*Index*/
+#index-header-grid {
+    display: grid;
+    grid-template-columns: 1fr 37.5vw 50vw  1fr;
+    background-color: antiquewhite;
+    align-items: center;
+
+}
+
+#index-header-grid img {
+    max-width: 37.5vw;
+    grid-column: 2;
+    margin: 5px 5px 5px 5px;
+}
+#index-header-grid h1 {
+  margin-left: 10px;
+}
+
+
+
+
+
+/*Lesson 2*/
+#design-principles-main-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/*Lesson 3*/
+
+#lesson3NavLinks {
+  list-style-type: none;
+  display: block;
+  text-align: center;
+  padding: 10px;
+
+}
+#lesson3NavLinks li {
+  text-decoration: none;
+  margin: 5px;
+}

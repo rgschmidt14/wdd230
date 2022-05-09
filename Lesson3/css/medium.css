@@ -1,0 +1,30 @@
+@media (min-width: 32.5em) {
+    
+   #index-header-grid img {
+       max-width: 12.1875em;
+   }
+   #index-header-grid {
+       grid-template-columns: 1fr 12.1875em 16.25em 1fr;
+       
+   }
+
+
+
+   /*lesson 2*/
+   #design-principles-main-grid {
+       grid-template-columns: 1fr 1fr;
+   }
+
+
+    /*Lesson 3*/
+    
+    #lesson3NavLinks {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        
+   }
+
+}
