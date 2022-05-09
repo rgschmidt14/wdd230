@@ -4,4 +4,7 @@
    #design-principles-main-grid {
        grid-template-columns: 1fr 1fr 1fr;
    }
+   body {
+       max-width: min-content;
+   }
 }
