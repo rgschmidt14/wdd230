@@ -17,17 +17,19 @@ body {
   /*max-width: 600px;*/
   max-width: max-content;
   margin: auto;
-  background-color: rgb(245, 255, 245);
+  background-color: whitesmoke;
 }
 main {
-  background-color: rgb(38, 200, 60);
+  border-color: #13B0D7;
+  border-radius: 5%;
 }
-h1, h2, h3, h4, h5, h6, p {
-  color: #001A03;
+p {
+  color: black;
 }
 h1, h2, h3, h4, h5, h6 {
   /*font-family: "Cormorant Garamond", serif;*/
   font-family: 'VT323', monospace;
+  color: #06356D;
 }
 img {
   max-width: 100%;
