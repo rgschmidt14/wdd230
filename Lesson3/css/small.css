@@ -81,6 +81,10 @@ header nav ul li {
   text-align:center
 }
 
+.betterHeightList {
+  line-height: 2.5em;
+}
+
 #colorSchemeGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
