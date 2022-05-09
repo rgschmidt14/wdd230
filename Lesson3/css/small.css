@@ -1,12 +1,3 @@
-/*All of the Generic stuff*/
-/* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat&display=swap');
-/*@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');*/
-
-
-
 /*All pages*/
 body {
   font-family: "Open Sans", sans-serif;
@@ -14,7 +5,6 @@ body {
   font-size: 18px;
   color: #444;
   min-width: 300px;
-  /*max-width: 600px;*/
   max-width: max-content;
   margin: auto;
   background-color: whitesmoke;
@@ -27,8 +17,7 @@ p {
   color: black;
 }
 h1, h2, h3, h4, h5, h6 {
-  /*font-family: "Cormorant Garamond", serif;*/
-  font-family: 'VT323', monospace;
+  font-family: 'Roboto', sans-serif;
   color: #06356D;
 }
 img {
@@ -45,39 +34,6 @@ img {
   background: #134492;
 }
 
-
-
-
-
-
-
-/*Index*/
-#index-header-grid {
-    display: grid;
-    grid-template-columns: 1fr 37.5vw 50vw  1fr;
-    background-color: antiquewhite;
-    align-items: center;
-
-}
-
-#index-header-grid img {
-    max-width: 37.5vw;
-    grid-column: 2;
-    margin: 5px 5px 5px 5px;
-}
-#index-header-grid h1 {
-  margin-left: 10px;
-}
-
-
-
-
-
-/*Lesson 2*/
-#design-principles-main-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-}
 
 /*Lesson 3*/
 
