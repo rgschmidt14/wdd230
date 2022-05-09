@@ -23,8 +23,9 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-
-        
    }
 
+   #lesson3NavLinks li {
+    margin: 4px 5% 4px 5%;
+  }
 }

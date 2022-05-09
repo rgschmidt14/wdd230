@@ -7,4 +7,7 @@
    body {
        max-width: 64em;
    }
+   #lesson3NavLinks li {
+    margin: 8px 5% 8px 5%;
+  }
 }
