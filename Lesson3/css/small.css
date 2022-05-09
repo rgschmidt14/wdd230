@@ -49,6 +49,11 @@ img {
   margin: 5px;
 }
 
+#colorSchemeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
 .colorSchemeColorBlock {
   width: 5em;
   height: 5em;
