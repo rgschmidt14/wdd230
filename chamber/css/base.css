@@ -4,7 +4,6 @@ img {
 #logoPic {
     width: 50px;
 }
-/* li {}*/
 
 nav ul {
     display: block;
@@ -13,4 +12,11 @@ nav ul {
 }
 nav ul li a {
     text-decoration: none;
+    padding: .8em 2vw;
+
+}
+
+#hamburgerBtn {
+    background: transparent;
+    font-size: 2em;
 }
