@@ -1,4 +1,6 @@
 @media (min-width: 32.5em) {
+    nav #nav1 {display: flex;}
+
     #hamburgerBtn {
         display: none;
     }
@@ -28,4 +30,5 @@
     #title {
         display: inline;
     }
+
 }
