@@ -52,4 +52,4 @@ function dTReader(date) { //give it a new Date() if you do not have a specific d
 }
 
 var readerOutcome1 = dTReader(new Date());
-document.getElementsByClassName("giveMeTodaysDate").innerHTML = ` ${readerOutcome1[2]}, ${readerOutcome1[4]} ${readerOutcome1[3]} ${readerOutcome1[5]}`;
+document.getElementByClassName("giveMeTodaysDate").innerHTML = ` ${readerOutcome1[2]}, ${readerOutcome1[4]} ${readerOutcome1[3]} ${readerOutcome1[5]}`;
