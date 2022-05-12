@@ -5,7 +5,9 @@ function toggleMenu() {
     document.getElementById("hamburgerBtn").classList.toggle("clicked")
 }
 
+const tHam = document.getElementById('hamburgerBtn');
 
+tHam.onClick = toggleMenu;
 
 //Date and Time Calculations
 monthsNames = [
