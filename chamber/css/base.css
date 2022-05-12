@@ -9,12 +9,12 @@ h1 {
 nav ul {
     display: block;
     list-style-type: none;
-
+}
+nav ul li {
+    padding: .8em 2vw;
 }
 nav ul li a {
     text-decoration: none;
-    padding: .8em 2vw;
-
 }
 
 #hamburgerBtn {
