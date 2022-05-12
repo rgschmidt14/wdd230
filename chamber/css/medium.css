@@ -14,5 +14,11 @@
     .giveMeTodaysDate {
         clear: both;
     }
-
+    #logoPic {
+        width: 32.5em;
+        display: inline;
+    }
+    #title {
+        display: inline;
+    }
 }
