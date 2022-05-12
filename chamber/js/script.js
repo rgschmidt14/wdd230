@@ -47,7 +47,7 @@ function dTReader(date) { //give it a new Date() if you do not have a specific d
     let day = d.getDate();
     let minutes = `${d.getMinutes()<10?'0':''}${d.getMinutes()}`;
     let timeOfDay = `${d.getHours()}:${minutes}`;
-    let dateCreated = [d,timeOfDay,dayOfWeek,months,day,years]; //These are the outcomes: [0] is the date object, [1] the time, [2] the english word for the day of the week, [3]the english name for the month of the year, [4] the year.
+    let dateCreated = [d,timeOfDay,dayOfWeek,months,day,years]; //These are the outcomes: [0] is the date object, [1] the time, [2] the english word for the day of the week, [3] the english name for the month of the year, [4] the day of the month in number format, [5] the year.
     return dateCreated;
 }
 
