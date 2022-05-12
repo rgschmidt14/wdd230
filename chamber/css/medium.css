@@ -1,6 +1,18 @@
 @media (min-width: 32.5em) {
+    #hamburgerBtn {
+        display: none;
+    }
     nav ul {
         display: flex;
-        
     }
+    #nav1 {
+        float: left;
+    }
+    #nav2 {
+        float: right;
+    }
+    .giveMeTodaysDate {
+        clear: both;
+    }
+
 }
