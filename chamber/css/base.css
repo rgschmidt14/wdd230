@@ -8,6 +8,10 @@ li {
     color:blue;
 }
 
-nav, #nav1, #nav2 {
-    display: flex;
+nav ul {
+    display: block;
+
+}
+#nav1, #nav2 {
+    list-style-type: none;
 }
