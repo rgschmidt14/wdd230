@@ -1,7 +1,7 @@
 img {
     max-width: 100%;
 }
-.logoPic {
+#logoPic {
     width: 50px;
 }
 li {
@@ -10,8 +10,6 @@ li {
 
 nav ul {
     display: block;
-
-}
-#nav1, #nav2 {
     list-style-type: none;
+
 }
