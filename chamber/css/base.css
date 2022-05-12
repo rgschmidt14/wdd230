@@ -21,6 +21,9 @@ nav ul {
     float: right;
     display: flex;
 }
+#nav2 li {
+    padding: 1.5vw;
+}
 nav ul li {
     padding: .8em 2vw;
 
@@ -43,13 +46,13 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-
-/*JavaScript */
 #giveMeTodaysDate {
     text-align: right;
     margin-bottom: 1vh;
     margin-top: 0px;
 }
+
+/*JavaScript Hiding-Showing*/
 #hamburgerBtn span:nth-child(1) {display:block;}
 #hamburgerBtn span:nth-child(2) {display:none;}
 
