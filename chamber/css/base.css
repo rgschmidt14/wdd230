@@ -6,20 +6,32 @@ img {
 h1 {
     text-align: center;
 }
+
 nav ul {
-    display: block;
     list-style-type: none;
+}
+#nav1 li {
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+#nav2 {
+    float: right;
+    display: flex;
 }
 nav ul li {
     padding: .8em 2vw;
+    background: ;
 }
+
 nav ul li a {
     text-decoration: none;
 }
-
+nav ul {
+    margin: 0px;
+}
 #hamburgerBtn {
     background: transparent;
     font-size: 2em;
+    
 }
 
 #hamburgerBtn span:nth-child(1) {display:block;}
