@@ -56,7 +56,6 @@ nav ul li a:hover {
 
 nav #nav1 {display: none;}
 nav #nav1.clicked {display: block;}
-
 #hamburgerBtn span:nth-child(1) {display:block;}
 #hamburgerBtn span:nth-child(2) {display:none;}
 
