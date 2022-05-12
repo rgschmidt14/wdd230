@@ -2,7 +2,8 @@ img {
     max-width: 100%;
 }
 #logoPic {
-    width: 50px;
+    width: 150px;
+    align-content: center;
 }
 
 h1 {
