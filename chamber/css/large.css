@@ -4,5 +4,11 @@
         margin: auto;
     }
     /*Setting the grid in the navigation and header*/
-   
+    #nav2 li {
+        padding: 10px 30.69px;
+    }
+    nav ul#nav1 li a{
+        border-top: none;
+        padding: 15px 35.805px;
+    }
 }

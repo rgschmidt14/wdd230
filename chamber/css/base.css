@@ -15,7 +15,9 @@ nav ul {
 #nav1 li {
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     background: snow;
-    padding-left: 40vw;
+    text-align: center;
+    /*padding-left: 25vw;*/
+
 }
 #nav2 {
     float: right;
@@ -23,27 +25,27 @@ nav ul {
 }
 #nav2 li {
     padding: 1.5vw;
-}
-nav ul li {
-    padding: .8em 2vw;
-
+    z-index: 3;
 }
 
-nav ul li a {
+nav ul#nav1 li a {
     text-decoration: none;
     display: block;
+    padding: .8em 2vw;
 }
 nav ul {
     margin: 0px;
 }
 #hamburgerBtn {
+    margin-top: 2px;
+    margin-left: 3vw;
     background: transparent;
     font-size: 2em;
     float: left;
 }
 
 nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, .1);
 }
 
 #giveMeTodaysDate {
