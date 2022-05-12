@@ -8,8 +8,15 @@
     #nav1 {
         float: left;
     }
+    #nav1 li {
+        border-top: none;
+        padding: 4vw;
+    }
     #nav2 {
         float: right;
+    }
+    #nav2 li {
+        padding: 4vw;
     }
     .giveMeTodaysDate {
         clear: both;

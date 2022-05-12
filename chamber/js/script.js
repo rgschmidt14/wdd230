@@ -6,7 +6,7 @@ function toggleMenu() {
 }
 
 const tHam = document.getElementById('hamburgerBtn');
-tHam.onClick = toggleMenu;
+tHam.onclick = toggleMenu;
 
 
 //Date and Time Calculations

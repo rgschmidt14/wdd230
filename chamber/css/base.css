@@ -5,14 +5,17 @@ img {
 
 h1 {
     text-align: center;
+    margin-bottom: 1vw;
 }
 
 nav ul {
     list-style-type: none;
+    padding: 0px;
 }
 #nav1 li {
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     background: snow;
+    padding-left: 40vw;
 }
 #nav2 {
     float: right;
@@ -33,10 +36,24 @@ nav ul {
 #hamburgerBtn {
     background: transparent;
     font-size: 2em;
+    float: left;
 }
-#giveMeTodaysDate { float: right;}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/*JavaScript */
+#giveMeTodaysDate {
+    text-align: right;
+    margin-bottom: 1vh;
+    margin-top: 0px;
+}
 #hamburgerBtn span:nth-child(1) {display:block;}
 #hamburgerBtn span:nth-child(2) {display:none;}
 
-#hamburgerBtn.open span:nth-child(2) {display:block;}
-#hamburgerBtn.open span:nth-child(1) {display:none;}
+#hamburgerBtn.clicked span:nth-child(2) {display:block;}
+#hamburgerBtn.clicked span:nth-child(1) {display:none;}
+
+
