@@ -1,0 +1,13 @@
+img {
+    max-width: 100%;
+}
+.logoPic {
+    width: 50px;
+}
+li {
+    color:blue;
+}
+
+nav, #nav1, #nav2 {
+    display: flex;
+}
