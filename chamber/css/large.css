@@ -11,4 +11,33 @@
         border-top: none;
         padding: 15px 35.805px;
     }
+    /*Doing the Grid for the <main> in <body>*/
+    main section {
+        grid-column: 1/-1;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    #spotlights {
+        height: 200px;
+        display: grid;
+
+    }
+
+    .spotlight:nth-child(1) {
+        height: 100%;
+        width: 100%;
+        grid-column: 1/2;
+    }
+
+    .spotlight:nth-child(2) {
+        height: 100%;
+        width: 100%;
+        grid-column: 2/3;
+        
+    }
+
+    .spotlight:nth-child(3) {
+        display: inline-block;
+    }
 }
