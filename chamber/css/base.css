@@ -71,6 +71,7 @@ main section {
     border: 3px solid rgba(0, 0, 0, 0.5);
     padding: 5px;
     margin: 5px;
+    
 
 
 }
@@ -83,9 +84,10 @@ main {
 #spotlights {
     height: max-content;
 }
-.spotlight {
-    width: 1em;
+main section section {
+    width: 100%;
 }
+
 .spotlight:nth-child(3) {
     display: none;
 }
