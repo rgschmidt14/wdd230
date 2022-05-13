@@ -64,4 +64,9 @@ nav #nav1.clicked {display: block;}
 #hamburgerBtn.clicked span:nth-child(2) {display:block;}
 #hamburgerBtn.clicked span:nth-child(1) {display:none;}
 
+/*Doing the Grid for the <main> in <body>*/
 
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
