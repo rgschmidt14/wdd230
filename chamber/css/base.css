@@ -91,3 +91,6 @@ main section section {
 .spotlight:nth-child(3) {
     display: none;
 }
+#join {
+    display: none;
+}

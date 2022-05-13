@@ -12,16 +12,26 @@
         padding: 15px 35.805px;
     }
     /*Doing the Grid for the <main> in <body>*/
-    main section {
-        grid-column: 1/-1;
-    }
     main {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #event {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+    #weather {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+    #join {
+        display: block;
+        grid-area: 3 / 1 / span 1 / span 1;
+    }
+    #hero {
+        grid-area: 1 / 2 / span 2 / span 2;
     }
     #spotlights {
         height: 200px;
         display: grid;
-
+        grid-area: 1 / 4 / span 1 / span 3;
     }
 
     .spotlight:nth-child(1) {
@@ -38,6 +48,6 @@
     }
 
     .spotlight:nth-child(3) {
-        display: inline-block;
+        display: block;
     }
 }
