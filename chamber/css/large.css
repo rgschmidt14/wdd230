@@ -24,18 +24,17 @@
         grid-area: 3 / 1 / span 1 / span 1;
     }
     #hero {
-        height: 100%;
+        height: calc(100% - 10px);
         grid-area: 1 / 2 / span 2 / span 2;
     }
     #spotlights {
-        height: 100%;
+        height: calc(100% - 10px);
         display: grid;
         grid-area: 1 / 4 / span 3 / span 1;
     }
     #newsRelease {
         grid-area: 3 / 2 / span 1 / span 2;
     }
-
     .spotlight:nth-child(1) {
         grid-column: 1 / 1 / span 1 / span 1;
     }
@@ -46,8 +45,8 @@
     }
 
     .spotlight:nth-child(3) {
-        height: 100%;
-        width: 100%;
+        height: calc(100% - 20px);
+        width: calc(100% - 20px);
         display: block;
         grid-area: 3 / 1 / span 1 / span 1;
 
