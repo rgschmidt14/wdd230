@@ -62,4 +62,10 @@
         grid-column: 2/3;
         
     }
+    #footerLogo {
+        max-width: 32.5em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
