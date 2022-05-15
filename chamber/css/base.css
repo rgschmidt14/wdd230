@@ -1,7 +1,7 @@
+
 img {
     max-width: 100%;
 }
-
 
 h1 {
     text-align: center;
@@ -12,14 +12,17 @@ h2 {
     margin: 0px;
     padding: 5px; 
 }
-
+nav {
+    background: #febe10;
+    
+}
 nav ul {
     list-style-type: none;
     padding: 0px;
 }
 #nav1 li {
     border-top: 1px solid rgba(0, 0, 0, 0.5);
-    background: snow;
+    background: #febe10;
     text-align: center;
     /*padding-left: 25vw;*/
 
@@ -80,6 +83,7 @@ main section {
     margin-right: 5px;
 
 }
+
 main {
     clear: both;
     display: grid;
