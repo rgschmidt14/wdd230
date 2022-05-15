@@ -111,3 +111,9 @@ main section section {
 #join {
     display: none;
 }
+footer ul li {
+    display: inline;
+}
+footer ul li h3 {
+    display:inline;
+}
