@@ -199,7 +199,17 @@ background: #13B0D7;
 
 }
 .spotlight {
-
+    color: white;
+    text-shadow: #003469;
+}
+.spotlight h2 {
+    vertical-align: bottom;
+}
+#spotlight1 {
+    background-image: url(https://archive.sltrib.com/images/2016/0109/rockclimbers_011016~0.jpg);
+}
+#spotlight2 {
+    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d9/f9/69/20190607-120700-largejpg.jpg?w=800&h=-1&s=1);
 }
 
 #join {
