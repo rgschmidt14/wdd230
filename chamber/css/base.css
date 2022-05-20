@@ -202,7 +202,7 @@ background: #13B0D7;
     color: white;
     text-shadow: #003469;
 }
-.spotlight h2 {
+.spotlight div {
     vertical-align: bottom;
 }
 #spotlight1 {
@@ -211,7 +211,9 @@ background: #13B0D7;
 #spotlight2 {
     background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d9/f9/69/20190607-120700-largejpg.jpg?w=800&h=-1&s=1);
 }
-
+#spotlight3 {
+    background-image: url(https://scontent-sjc3-1.xx.fbcdn.net/v/t1.6435-9/59555684_10158378990472802_8279368139641192448_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=_g6-137GZvAAX-CVc-n&_nc_ht=scontent-sjc3-1.xx&oh=00_AT_AndPHM_wXokgpqjitoDGH8ZCQzGy8DWrvI2Nrwgmoug&oe=62ACAD9E);
+}
 #join {
 
 }
