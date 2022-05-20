@@ -10,8 +10,9 @@ h1 {
 
 h2 {
     margin: 0px;
-    margin-left: 12px;
+    margin-top: 5px;
     padding: 5px; 
+    text-align: center;
 }
 nav {
     background: #febe10;
@@ -36,7 +37,9 @@ nav ul {
     padding: 1.5vw;
     z-index: 3;
 }
-
+#nav1 li:hover {
+    opacity: .8;
+}
 nav ul#nav1 li a {
     text-decoration: none;
     display: block;
@@ -64,6 +67,19 @@ nav ul li a:hover {
 }
 
 /*JavaScript Hiding-Showing*/
+
+/*making the burger float so it can be clicked even when hovering the home maenu button in small/base resolution*/
+#hamburgerBtn {
+    position: absolute;
+    z-index: 10;
+}
+/*fixing the z-index problem from above in ultra low res settings*/
+@media (max-width: 200px) {
+    #hamburgerBtn {
+        position: relative;
+        z-index: 1;
+    }
+}
 
 nav #nav1 {display: none;}
 nav #nav1.clicked {display: block;}
@@ -135,4 +151,57 @@ border: 1px;
 height: 1px;
 width: 100%;
 background: #13B0D7;
+}
+
+/*Adding the pictures for the main grid homepage*/
+.newFont {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 1.1em;
+}
+.msec {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#hero {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fe0%2Ffe%2Ff6%2Fe0fef66d4ec9ab8489875d3868f7d44f.jpg&f=1&nofb=1);
+}
+#event {
+    background-image: url(https://www.visitogden.com/imager/www_trumba_com/i/DgCfoSwC0nvreRSKRTnG99ao_760916c9b318a56d09f73cfb02e61dc7.jpeg);
+}
+
+#weather {
+    background-color: lightblue;
+}
+
+#newsRelease {
+    height: min-content;
+    background-image: url(https://ogden_images.s3.amazonaws.com/www.standard.net/images/2022/05/17180332/FB_IMG_1642007179129-625x938.jpg);
+    opacity: .6;
+}
+#newsRelease p {
+    margin-bottom: 3px;
+    opacity: 2;
+    
+}
+#newsRelease a {
+    float: right;
+    margin-right: 35px;
+}
+@media (max-width: 235px) {
+    #newsRelease a {
+        text-align: center;
+        margin: 0px 35px 0px 35px;
+    }
+}
+#spotlights {
+
+}
+.spotlight {
+
+}
+
+#join {
+
 }

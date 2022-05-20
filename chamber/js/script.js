@@ -56,3 +56,6 @@ document.getElementById("giveMeTodaysDate").innerHTML = ` ${readerOutcome1[2]}, 
 document.getElementById("yearFooter").innerHTML = ` ${readerOutcome1[5]}`;
 var readerOutcome2 = document.lastModified
 document.getElementById("recentUpDate").innerHTML = `Last Modified: ${readerOutcome2}`;
+
+//adding the pictures in for the main page
+//how ??
