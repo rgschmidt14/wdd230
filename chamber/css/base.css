@@ -13,6 +13,7 @@ h2 {
     margin-top: 5px;
     padding: 5px; 
     text-align: center;
+    
 }
 nav {
     background: #febe10;
@@ -107,6 +108,7 @@ main {
     clear: both;
     display: grid;
     grid-gap: 10px;
+    
 }
 
 #spotlights {
@@ -117,7 +119,7 @@ main section section {
 }
 .spotlight {
     margin-top: 5px;
-    height: calc(180px);
+    height: 180px;
     width: calc(100% - 20px);
 }
 
@@ -143,14 +145,14 @@ footer ul li h4 {
 }
 
 .horizontalLine {
-margin-top: 20px;
-margin-bottom: 10px;
-margin-left: 5px;
-margin-right: 5px;;
-border: 1px;
-height: 1px;
-width: 100%;
-background: #13B0D7;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;;
+    border: 1px;
+    height: 1px;
+    width: 100%;
+    background: #13B0D7;
 }
 
 /*Adding the pictures for the main grid homepage*/
@@ -166,53 +168,79 @@ background: #13B0D7;
 }
 #hero {
     background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fe0%2Ffe%2Ff6%2Fe0fef66d4ec9ab8489875d3868f7d44f.jpg&f=1&nofb=1);
+    grid-column: 1/2;
+    background-size: cover;
 }
 #event {
     background-image: url(https://www.visitogden.com/imager/www_trumba_com/i/DgCfoSwC0nvreRSKRTnG99ao_760916c9b318a56d09f73cfb02e61dc7.jpeg);
+    grid-column: 1/2;
 }
 
 #weather {
     background-color: lightblue;
+    grid-column: 1/2;
 }
 
 #newsRelease {
-    height: min-content;
+    height: calc(100% - 10px);
     background-image: url(https://ogden_images.s3.amazonaws.com/www.standard.net/images/2022/05/17180332/FB_IMG_1642007179129-625x938.jpg);
     opacity: .6;
+    grid-row: 3/4;
+    grid-column: 1/2;
 }
 #newsRelease p {
     margin-bottom: 3px;
-    opacity: 2;
     
 }
-#newsRelease a {
+#newsReleaseInfo {
+    height: min-content;
+    grid-row: 3/4;
+    z-index: 2;
+    grid-column: 1/2;
+    text-shadow: 0px 0px 1.4px rgba(255, 255, 255, .5);
+}
+#newsReleaseInfo p {
+    margin-bottom: 3px;
+    padding: 0px 1.8vw 0px 1.8vw;
+}
+#newsReleaseInfo a {
     float: right;
     margin-right: 35px;
 }
 @media (max-width: 235px) {
-    #newsRelease a {
+    #newsReleaseInfo a {
         text-align: center;
         margin: 0px 35px 0px 35px;
     }
 }
-#spotlights {
 
+
+
+.spotlight {
+    display: grid;
+    grid-template-rows: 75% 25%;
 }
 .spotlight {
     color: white;
-    text-shadow: #003469;
+    text-shadow: 0px 1px 3px black;
+    background: darkblue;
 }
 .spotlight div {
     vertical-align: bottom;
 }
 #spotlight1 {
     background-image: url(https://archive.sltrib.com/images/2016/0109/rockclimbers_011016~0.jpg);
+    background-size: cover;
+    
 }
+
 #spotlight2 {
     background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d9/f9/69/20190607-120700-largejpg.jpg?w=800&h=-1&s=1);
+    background-position: center center;
 }
 #spotlight3 {
     background-image: url(https://scontent-sjc3-1.xx.fbcdn.net/v/t1.6435-9/59555684_10158378990472802_8279368139641192448_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=_g6-137GZvAAX-CVc-n&_nc_ht=scontent-sjc3-1.xx&oh=00_AT_AndPHM_wXokgpqjitoDGH8ZCQzGy8DWrvI2Nrwgmoug&oe=62ACAD9E);
+    background-size: cover;
 }
 #join {
 

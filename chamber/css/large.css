@@ -12,7 +12,9 @@
         padding: 15px 35.805px;
     }
     /*Doing the Grid for the <main> in <body>*/
-    
+    main {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
     #event {
         grid-area: 1 / 1 / span 1 / span 1;
     }
@@ -26,22 +28,32 @@
     #hero {
         height: calc(100% - 10px);
         grid-area: 1 / 2 / span 2 / span 2;
+        font-size: 25.2px;
+        padding-top: 5px;
+        color: white;
     }
     #spotlights {
         height: calc(100% - 10px);
-        display: grid;
         grid-area: 1 / 4 / span 3 / span 1;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
     }
     #newsRelease {
         grid-area: 3 / 2 / span 1 / span 2;
     }
+    #newsReleaseInfo {
+        grid-area: 3 / 2 / span 1 / span 2;
+        z-index: 2;
+    }
     .spotlight:nth-child(1) {
         grid-column: 1 / 1 / span 1 / span 1;
+        display: block;
+        
     }
 
     .spotlight:nth-child(2) {
         grid-area: 2 / 1 / span 1 / span 1;
-        
+        display: block;
     }
 
     .spotlight:nth-child(3) {

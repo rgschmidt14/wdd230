@@ -1,6 +1,11 @@
 @media (min-width: 32.5em) {
     nav #nav1 {display: flex;}
 
+    #hero {
+        font-size: calc(1em + .8vw);
+        padding-top: .3vw;
+    }
+
     #hamburgerBtn {
         display: none;
     }
@@ -44,6 +49,7 @@
     #spotlights {
         height: 200px;
         display: grid;
+        grid-template-columns: 1fr 1fr;
     
 
     }
@@ -53,6 +59,7 @@
         height: calc(100% - 20px);
         width: calc(100% - 20px);
         grid-column: 1/2;
+
     }
 
     .spotlight:nth-child(2) {
@@ -73,7 +80,10 @@
     #newsRelease {
         height: 200px;
     }
-    #newsRelease a {
+    #newsReleaseInfo {
+        height: 200px;
+    }
+    #newsReleaseInfo a {
         margin-right: 15px;
     }
 }

@@ -42,13 +42,14 @@ function dTReader(date) { //give it a new Date() if you do not have a specific d
     const aYear = aDay * 365;
     const d = date;
     let years = Math.floor(d.getTime() / aYear) + 1970;
-    let months = monthsNames[Math.floor(((d.getTime() / aYear) - years + 1970) * 12)];
+    let months = monthsNames[Math.floor(((d.getTime() / aYear) - years + 1970) * 12) - 1]; //the minus one is because javascript starts at 0 not 1 in their arrays.
     let dayOfWeek = daysNames[Math.floor(d.getDay())];
     let day = d.getDate();
     let minutes = `${d.getMinutes()<10?'0':''}${d.getMinutes()}`;
     let timeOfDay = `${d.getHours()}:${minutes}`;
     let dateCreated = [d,timeOfDay,dayOfWeek,months,day,years]; //These are the outcomes: [0] is the date object, [1] the time, [2] the english word for the day of the week, [3] the english name for the month of the year, [4] the day of the month in number format, [5] the year.
     return dateCreated;
+    
 }
 
 var readerOutcome1 = dTReader(new Date());
