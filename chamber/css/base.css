@@ -1,4 +1,10 @@
-
+#banner {
+    height: max-content;
+    padding: 5px 0px;
+    text-align: center;
+    background: #003469;
+    color: white;
+}
 img {
     max-width: 100%;
 }

@@ -58,8 +58,16 @@ document.getElementById("yearFooter").innerHTML = ` ${readerOutcome1[5]}`;
 var readerOutcome2 = document.lastModified
 document.getElementById("recentUpDate").innerHTML = `Last Modified: ${readerOutcome2}`;
 
-//adding the pictures in for the main page
-//how ??
+//Mon/Tue Announcement ......This is not working....
+console.log(readerOutcome1[2],readerOutcome1[0].getDay)
+let banner = document.querySelector("#banner")
+if (!(readerOutcome1[2] === "Monday", "Tuesday")) {
+    banner.display = "none";
+};
+
+console.log(document.querySelector("#banner").display);
+console.log(banner.display);
+
 
 
 //add click event to the spotlight images and weather and event maybe make even the join section a big version of a button
