@@ -21,6 +21,12 @@
     #weather {
         grid-area: 2 / 1 / span 1 / span 1;
     }
+    #weather img {
+
+        height: auto;
+        margin: auto;
+        margin-top: 15px;
+    }
     #join {
         display: block;
         grid-area: 3 / 1 / span 1 / span 1;
@@ -31,6 +37,13 @@
         font-size: 25.2px;
         padding-top: 5px;
         color: white;
+    }
+    #heroJoinBtn {
+        display: inline-block;
+        padding: 20px;
+        margin: 160px 0px 0px 190px;
+        background: rgba(184, 195, 202, 0.8);
+        
     }
     #spotlights {
         height: calc(100% - 10px);

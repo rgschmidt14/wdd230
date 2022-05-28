@@ -60,3 +60,6 @@ document.getElementById("recentUpDate").innerHTML = `Last Modified: ${readerOutc
 
 //adding the pictures in for the main page
 //how ??
+
+
+//add click event to the spotlight images and weather and event maybe make even the join section a big version of a button
