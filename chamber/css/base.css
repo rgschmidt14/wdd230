@@ -45,7 +45,7 @@ nav ul {
     z-index: 3;
 }
 #nav1 li:hover {
-    opacity: .8;
+    background-color:rgba(252, 127, 10, 0.4);
 }
 nav ul#nav1 li a {
     text-decoration: none;
@@ -61,10 +61,20 @@ nav ul {
     background: transparent;
     font-size: 2em;
     float: left;
+    z-index: 2;
+    padding:0px;
 }
-
+#hamburgerBtn≡ {
+    padding: 1px 6px;
+}
+#hamburgerBtnX {
+    padding: 1px 6px;
+}
+#hamburgerBtnX:hover {
+    background-color:rgba(252, 127, 10, 0.5);
+}
 nav ul li a:hover {
-    background-color: rgba(0, 0, 0, .1);
+    background-color:rgba(252, 127, 10, 0.5);
 }
 
 #giveMeTodaysDate {

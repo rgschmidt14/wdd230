@@ -59,14 +59,11 @@ var readerOutcome2 = document.lastModified
 document.getElementById("recentUpDate").innerHTML = `Last Modified: ${readerOutcome2}`;
 
 //Mon/Tue Announcement ......This is not working....
-console.log(readerOutcome1[2],readerOutcome1[0].getDay)
 let banner = document.querySelector("#banner")
-if (!(readerOutcome1[2] === "Monday", "Tuesday")) {
-    banner.display = "none";
+if (!(readerOutcome1[2] === daysNames[1] || readerOutcome1[2] === daysNames[2])) {
+    banner.style.display = "none";
 };
 
-console.log(document.querySelector("#banner").display);
-console.log(banner.display);
 
 
 
