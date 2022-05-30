@@ -1,0 +1,295 @@
+#banner {
+    height: max-content;
+    padding: 5px 0px;
+    text-align: center;
+    background: #003469;
+    color: white;
+}
+img {
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+h2 {
+    margin: 0px;
+    margin-top: 5px;
+    padding: 5px; 
+    text-align: center;
+    
+}
+nav {
+    background: #febe10;
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+}
+#nav1 li {
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    background: #febe10;
+    text-align: center;
+    /*padding-left: 25vw;*/
+
+}
+#nav2 {
+    float: right;
+    display: flex;
+}
+#nav2 li {
+    padding: 1.5vw;
+    z-index: 3;
+}
+#nav1 li:hover {
+    opacity: .8;
+}
+nav ul#nav1 li a {
+    text-decoration: none;
+    display: block;
+    padding: .8em 2vw;
+}
+nav ul {
+    margin: 0px;
+}
+#hamburgerBtn {
+    margin-top: 2px;
+    margin-left: 3vw;
+    background: transparent;
+    font-size: 2em;
+    float: left;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+#giveMeTodaysDate {
+    text-align: right;
+    margin-bottom: 1vh;
+    margin-top: 0px;
+}
+
+/*JavaScript Hiding-Showing*/
+
+/*making the burger float so it can be clicked even when hovering the home maenu button in small/base resolution*/
+#hamburgerBtn {
+    position: absolute;
+    z-index: 10;
+}
+/*fixing the z-index problem from above in ultra low res settings*/
+@media (max-width: 200px) {
+    #hamburgerBtn {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+nav #nav1 {display: none;}
+nav #nav1.clicked {display: block;}
+#hamburgerBtn span:nth-child(1) {display:block;}
+#hamburgerBtn span:nth-child(2) {display:none;}
+
+#hamburgerBtn.clicked span:nth-child(2) {display:block;}
+#hamburgerBtn.clicked span:nth-child(1) {display:none;}
+
+/*Doing the Grid for the <main> in <body>*/
+
+main section {
+    width: calc(100% - 10px);
+    height: calc(200px - 10px);
+    margin-left: 5px;
+    margin-right: 5px;
+    border: #13B0D7;
+    border-width: 5px;
+    border-radius: 50px;
+    border-style: solid;
+
+}
+
+main {
+    clear: both;
+    display: grid;
+    grid-gap: 10px;
+    
+}
+
+#spotlights {
+    height: 400px;
+}
+main section section {
+    width: 100%;
+}
+.spotlight {
+    margin-top: 5px;
+    height: 180px;
+    width: calc(100% - 20px);
+}
+
+.spotlight:nth-child(3) {
+    display: none;
+}
+#join {
+    display: none;
+}
+footer ul {
+    text-align: center;
+}
+footer ul li {
+    display: inline;
+}
+footer ul li h3, footer ul li h4 {
+    color: #003469;
+    display:inline;
+}
+footer ul li h4 {
+    color: #13B0D7;
+    
+}
+
+.horizontalLine {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;;
+    border: 1px;
+    height: 1px;
+    width: 100%;
+    background: #13B0D7;
+}
+
+/*Adding the pictures for the main grid homepage*/
+main section {
+    background: lightblue;
+}
+
+#heroJoinBtn {
+    display:none;
+    padding: 20px;
+    margin: 160px 0px 0px 190px;
+    background: rgba(184, 195, 202, 0.8);
+    
+}
+.newFont {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 1.1em;
+}
+.msec {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#hero {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fe0%2Ffe%2Ff6%2Fe0fef66d4ec9ab8489875d3868f7d44f.jpg&f=1&nofb=1);
+    grid-column: 1/2;
+    background-size: cover;
+}
+#event {
+    background-image: url(https://www.visitogden.com/imager/www_trumba_com/i/DgCfoSwC0nvreRSKRTnG99ao_760916c9b318a56d09f73cfb02e61dc7.jpeg);
+    grid-column: 1/2;
+}
+
+#weather {
+    background-color: lightblue;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#weather h2 {
+    grid-column: 1/3;
+}
+#weather ul {
+    grid-column: 2/3;
+}
+#weather img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#newsRelease {
+    height: calc(100% - 10px);
+    background-image: url(https://ogden_images.s3.amazonaws.com/www.standard.net/images/2022/05/17180332/FB_IMG_1642007179129-625x938.jpg);
+    opacity: .6;
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+#newsRelease p {
+    margin-bottom: 3px;
+    
+}
+#newsReleaseInfo {
+    height: min-content;
+    grid-row: 3/4;
+    z-index: 2;
+    grid-column: 1/2;
+    text-shadow: 0px 0px 1.4px rgba(255, 255, 255, .5);
+    background:none;
+}
+#newsReleaseInfo p {
+    margin-bottom: 3px;
+    padding: 0px 1.8vw 0px 1.8vw;
+}
+#newsReleaseInfo a {
+    float: right;
+    margin-right: 35px;
+}
+@media (max-width: 235px) {
+    #newsReleaseInfo a {
+        text-align: center;
+        margin: 0px 35px 0px 35px;
+    }
+}
+
+
+
+.spotlight {
+    display: grid;
+    grid-template-rows: 75% 25%;
+}
+.spotlight {
+    color: white;
+    text-shadow: 0px 1px 3px black;
+    background: darkblue;
+}
+.spotlight div {
+    vertical-align: bottom;
+}
+#spotlight1 {
+    background-image: url(https://archive.sltrib.com/images/2016/0109/rockclimbers_011016~0.jpg);
+    background-size: cover;
+    
+}
+
+#spotlight2 {
+    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d9/f9/69/20190607-120700-largejpg.jpg?w=800&h=-1&s=1);
+    background-position: center center;
+}
+#spotlight3 {
+    background-image: url(https://scontent-sjc3-1.xx.fbcdn.net/v/t1.6435-9/59555684_10158378990472802_8279368139641192448_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=_g6-137GZvAAX-CVc-n&_nc_ht=scontent-sjc3-1.xx&oh=00_AT_AndPHM_wXokgpqjitoDGH8ZCQzGy8DWrvI2Nrwgmoug&oe=62ACAD9E);
+    background-size: cover;
+}
+#join {
+    background: lightblue;
+}
+#join p {
+    margin: 0px 5px 0px 5px;
+}
+#join button {
+    margin: 10px;
+    border-radius: 0px 0px 15px 15px;
+    border-width: 1px;
+}
+
+
+
+/*Only for week 6*/
+picture {
+    width: 100%;
+}
+picture 
+
+
