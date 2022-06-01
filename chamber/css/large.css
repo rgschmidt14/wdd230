@@ -83,4 +83,23 @@
         height: calc(100% - 10px);
         grid-area: 1 / 2 / span 2 / span 2;
     }
+    /*fixing all the pictures Week06*/
+    #hero {
+        background-image: url("");
+    }
+    #event {
+        background-image: url("");
+    }
+    #newsRelease {
+        background-image: url("");
+    }
+    #spotlight1 {
+        background-image: url("");
+    }
+    #spotlight2 {
+        background-image: url("");
+    }
+    #spotlight3 {
+        background-image: url("");
+    }
 }

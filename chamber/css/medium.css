@@ -92,4 +92,23 @@
     #newsReleaseInfo a {
         margin-right: 15px;
     }
+    /*fixing all the pictures Week06*/
+    #hero {
+        background-image: url("");
+    }
+    #event {
+        background-image: url("");
+    }
+    #newsRelease {
+        background-image: url("");
+    }
+    #spotlight1 {
+        background-image: url("");
+    }
+    #spotlight2 {
+        background-image: url("");
+    }
+    #spotlight3 {
+        background-image: url("");
+    }
 }
