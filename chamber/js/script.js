@@ -68,3 +68,15 @@ if (!(readerOutcome1[2] === daysNames[1] || readerOutcome1[2] === daysNames[2]))
 
 
 //add click event to the spotlight images and weather and event maybe make even the join section a big version of a button
+
+
+//fixing images //it didn't work
+// function rightSizePlz(newPic, locat) {
+//     locat.setAttribute("style", 'background-image: url("'+ newPic +'")') 
+
+// }
+// let newPic = document.querySelector("#hero-pic")
+
+// let locat = document.querySelector("#event")
+// console.log(newPic, locat)
+// rightSizePlz(newPic, locat)

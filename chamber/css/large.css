@@ -14,6 +14,7 @@
     /*Doing the Grid for the <main> in <body>*/
     main {
         grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 1fr 1fr 1fr;
     }
     #event {
         grid-area: 1 / 1 / span 1 / span 1;
@@ -75,5 +76,11 @@
         display: block;
         grid-area: 3 / 1 / span 1 / span 1;
 
+    }
+
+    /*6th week only*/
+    #hero-background {
+        height: calc(100% - 10px);
+        grid-area: 1 / 2 / span 2 / span 2;
     }
 }

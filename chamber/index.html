@@ -21,7 +21,7 @@
     <body>
         <header>
             <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
-            <img src="images/ogden_utah_logo.png" alt="logo" id="logoPic">
+            <img src="images/ogden_utah_logo.webp" alt="logo" id="logoPic">
             <div id="title">
                 <h1>Ogden Chamber of Commerce</h1>
             </div>
@@ -44,17 +44,18 @@
 
             <!-- Hero -->
             <section id="hero" class="msec">
-                <picture>
-                    <source srcset="images/wdd230_img/wdd230-org-small.jpg" media = "(max-width: 32.5em)">
-                    <source srcset="images/wdd230_img/wdd230-org-medium.jpeg" media = "(max-width: 64em)">
-                    <source srcset="images/wdd230_img/wdd230-org-large.jpg">
-                    <img src="images/wdd230_img/wdd230-org.jpg">
-                </picture>
-               
                 <h2>
                     <span class="newFont">Ogden Welcomes</span> You <span class="newFont">Bienvenido</span>
                 </h2>
                 <button href="#" id="heroJoinBtn">Become a Member!</button>
+            </section>
+            <section id="hero-background" class="msec">
+            <picture id="hero-pic">
+                <source srcset="images/wdd230_img/wdd230-org-small.jpg" media = "(max-width: 32.5em)">
+                <source srcset="images/wdd230_img/wdd230-org-medium.jpeg" media = "(max-width: 64em)">
+                <source srcset="images/wdd230_img/wdd230-org-large.jpg">
+                <img src="images/wdd230_img/wdd230-org.jpg">
+            </picture>
             </section>
 
             
@@ -69,8 +70,9 @@
                 <h2>Weather</h2>
                 <img src="https://svs.gsfc.nasa.gov/vis/a010000/a011400/a011482/frames/500x354_7x5_1p/Weather_Icons/01sunny-tinycloud-t9953_transp.png">
                 <ul>
-                    <li><p>75°F Partly Cloudy</p></li>
-                    <li><p>10mph Wind</p></li>
+                    <li><p><span id="temperature">75</span>°F Partly Cloudy</p></li>
+                    <li><p><span id="windMph">10</span>mph Wind</p></li>
+                    <li><p>Feels Like (Chill Factor): <span id="windChill">75</span>°F</p></li>
                 </ul>
             </section>
 
@@ -111,7 +113,7 @@
         </main>
         <footer>
             <div class="horizontalLine"></div>
-            <img src="images/ogden_utah_logo.png" alt="logo" id="footerLogo">
+            <img src="images/ogden_utah_logo.webp" alt="logo" id="footerLogo">
             <ul>
                 <li><h3>Contact Info:</h3></li>
                 <li><h4>Phone:</h4> 123-456-7890 </li>
@@ -131,5 +133,6 @@
             </div>
         </footer>
         <script src="js/script.js" defer></script>
+        <script src="js/windchill.js" defer></script>
     </body>
 </html>
