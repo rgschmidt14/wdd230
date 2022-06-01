@@ -35,14 +35,14 @@ daysNames = [
     "Saturday"
 ];
 
-function dTReader(date) { //give it a new Date() if you do not have a specific date in mind to give it.
+function dTReader(date) { //give it a new Date() if you do not have a specific date in mind to give it. ...this formula is off when it comes to the first and last couple days of the month, since I simply have it dividing 365 days into 12 equal months instead of looping through an array of how many days are in each month and aggregating them together to figure out which month we are in.
     const aMinute = 1000 * 60;
     const anHour = aMinute * 60;
     const aDay = anHour * 24;
     const aYear = aDay * 365;
     const d = date;
     let years = Math.floor(d.getTime() / aYear) + 1970;
-    let months = monthsNames[Math.floor(((d.getTime() / aYear) - years + 1970) * 12) - 1]; //the minus one is because javascript starts at 0 not 1 in their arrays.
+    let months = monthsNames[Math.floor(((d.getTime() / aYear) - years + 1970) * 12)];
     let dayOfWeek = daysNames[Math.floor(d.getDay())];
     let day = d.getDate();
     let minutes = `${d.getMinutes()<10?'0':''}${d.getMinutes()}`;
