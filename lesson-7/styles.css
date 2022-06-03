@@ -22,8 +22,10 @@ main picture {
 /*Blur*/
 img[data-src] {
     filter: blur(.2em);
+    filter: opacity(.1);
 }
 img {
     filter: blur(0);
-    transition: filter .5s;
+    filter: opacity(1);
+    transition: filter 1s;
 }
