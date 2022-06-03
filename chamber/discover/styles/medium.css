@@ -1,0 +1,44 @@
+@media (min-width: 32.5em) {
+    nav #nav1 {display: flex;}
+
+    #hero {
+        font-size: calc(1em + .8vw);
+        padding-top: .3vw;
+    }
+
+    #hamburgerBtn {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+    }
+    #nav1 {
+        float: left;
+    }
+    #nav1 li {
+        border-top: none;
+    }
+    nav ul#nav1 li a {
+        padding: .8em 3.5vw;
+    }
+    #nav2 {
+        float: right;
+    }
+    #nav2 li {
+        padding: 0.5em 3vw;
+    }
+    .giveMeTodaysDate {
+        clear: both;
+    }
+    #logoPic {
+        width: 32.5em;
+        display: inline;
+    }
+    #title {
+        display: inline;
+    }
+    nav #nav1.clicked {display: flex;}
+    #giveMeTodaysDate {
+        margin-right: .5vw;
+    }
+}

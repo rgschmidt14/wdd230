@@ -56,26 +56,3 @@ document.getElementById("giveMeTodaysDate").innerHTML = ` ${readerOutcome1[2]}, 
 document.getElementById("yearFooter").innerHTML = ` ${readerOutcome1[5]}`;
 var readerOutcome2 = document.lastModified
 document.getElementById("recentUpDate").innerHTML = `Last Modified: ${readerOutcome2}`;
-
-//Mon/Tue Announcement ......This is not working....
-let banner = document.querySelector("#banner")
-if (!(readerOutcome1[2] === daysNames[1] || readerOutcome1[2] === daysNames[2])) {
-    banner.style.display = "none";
-};
-
-
-
-
-//add click event to the spotlight images and weather and event maybe make even the join section a big version of a button
-
-
-//fixing images //it didn't work
-// function rightSizePlz(newPic, locat) {
-//     locat.setAttribute("style", 'background-image: url("'+ newPic +'")') 
-
-// }
-// let newPic = document.querySelector("#hero-pic")
-
-// let locat = document.querySelector("#event")
-// console.log(newPic, locat)
-// rightSizePlz(newPic, locat)
