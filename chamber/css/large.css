@@ -78,11 +78,11 @@
 
     }
 
-    /*6th week only*/
+    /* 6th week only
     #hero-background {
         height: calc(100% - 10px);
         grid-area: 1 / 2 / span 2 / span 2;
-    }
+    } */
     /*fixing all the pictures Week06*/
     #hero {
         background-image: url("https://github.com/rgschmidt14/wdd230/blob/main/chamber/images/dif_sizes/e0fef66d4ec9ab8489875d3868f7d44f-1432800277-small.jpeg?raw=true");
