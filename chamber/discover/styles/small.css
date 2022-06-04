@@ -119,5 +119,8 @@ footer ul li h3, footer ul li h4 {
 }
 footer ul li h4 {
     color: #13B0D7;
-    
 }
+main {
+    clear: both;
+}
+/*Main*/
