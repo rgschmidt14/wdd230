@@ -123,4 +123,15 @@ footer ul li h4 {
 main {
     clear: both;
 }
+
+
+
 /*Main*/
+main ul li {
+    list-style-type: none;
+}
+main ul {
+    padding: 0;
+    margin: 2vw;
+}
+

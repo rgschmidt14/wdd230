@@ -56,3 +56,29 @@ document.getElementById("giveMeTodaysDate").innerHTML = ` ${readerOutcome1[2]}, 
 document.getElementById("yearFooter").innerHTML = ` ${readerOutcome1[5]}`;
 var readerOutcome2 = document.lastModified
 document.getElementById("recentUpDate").innerHTML = `Last Modified: ${readerOutcome2}`;
+
+//loading images
+function imageReplacer(img) {
+    img.setAttribute('src', img.getAttribute('data-src'));
+    img.onload = () => {removeAttribute("data-src")};
+};
+let loadThese = document.querySelectorAll("img[data-src]");
+
+if('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(
+        (items, observer) => {
+            items.forEach((item) => {
+                if(item.isIntersecting) {
+                    imageReplacer(item.target);
+                    observer.unobserve(item.target);
+                }
+            });
+        });
+        loadThese.forEach((img) => {
+            observer.observe(img);
+        });
+} else {
+    loadThese.forEach((img) => {
+        imageReplacer(img);
+    });
+};
