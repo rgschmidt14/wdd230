@@ -42,7 +42,7 @@
         margin-right: .5vw;
     }
     /*Doing the Grid for the <main> in <body>*/
-    main section {
+    main#home-main section {
         grid-column: 1/-1;
     }
     #weather img {

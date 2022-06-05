@@ -127,11 +127,7 @@ main {
 
 
 /*Main*/
-main ul li {
-    list-style-type: none;
-}
-main ul {
-    padding: 0;
+main#discover-main-grid section {
     margin: 2vw;
 }
 

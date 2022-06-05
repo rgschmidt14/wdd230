@@ -41,4 +41,10 @@
     #giveMeTodaysDate {
         margin-right: .5vw;
     }
+
+    /*Main*/
+    main#discover-main-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }

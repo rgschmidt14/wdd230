@@ -12,7 +12,7 @@
         padding: 15px 35.805px;
     }
     /*Doing the Grid for the <main> in <body>*/
-    main {
+    main#home-main {
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: 1fr 1fr 1fr;
     }

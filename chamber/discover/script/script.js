@@ -60,7 +60,7 @@ document.getElementById("recentUpDate").innerHTML = `Last Modified: ${readerOutc
 //loading images
 function imageReplacer(img) {
     img.setAttribute('src', img.getAttribute('data-src'));
-    img.onload = () => {removeAttribute("data-src")};
+    img.onload = () => {img.removeAttribute("data-src")};
 };
 let loadThese = document.querySelectorAll("img[data-src]");
 
