@@ -143,3 +143,6 @@ main#discover-main-grid div#days-since-last-page-visit {
     grid-row: 9/10;
 }
 
+main#discover-main-grid section img:hover {
+    filter: drop-shadow(0 0 1rem rgb(29, 52, 128));
+}
