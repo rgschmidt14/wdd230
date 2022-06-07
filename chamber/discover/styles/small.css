@@ -127,7 +127,19 @@ main {
 
 
 /*Main*/
+main#discover-main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 main#discover-main-grid section {
     margin: 2vw;
+    grid-column: 1/2;
+}
+main#discover-main-grid div#demographics {
+    float: left;
+    grid-row: 1/3;
+}
+main#discover-main-grid div#days-since-last-page-visit {
+    grid-row: 9/10;
 }
 

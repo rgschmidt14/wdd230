@@ -44,7 +44,9 @@
 
     /*Main*/
     main#discover-main-grid {
-        display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    main#discover-main-grid section {
+        grid-column: 2/3;
     }
 }
