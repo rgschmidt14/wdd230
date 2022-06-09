@@ -127,7 +127,7 @@ main#home-main {
     
 }
 
-#spotlights {
+main#home-main #spotlights {
     height: 400px;
 }
 main#home-main section section {
@@ -159,6 +159,9 @@ footer ul li h4 {
     color: #13B0D7;
     
 }
+main {
+    clear: both;
+}
 
 .horizontalLine {
     margin-top: 20px;
@@ -178,9 +181,14 @@ main#home-main section {
 
 #heroJoinBtn {
     display:none;
+    text-align: left;
     padding: 20px;
     margin: 160px 0px 0px 190px;
-    background: rgba(184, 195, 202, 0.8);
+    background: linear-gradient(rgba(236, 122, 122, 0.8), rgba(255, 255, 255, 0.7), rgba(119, 135, 224, 0.8));
+    border-radius: 0 50% 30% 30%;
+    
+}#heroJoinBtn:hover {
+    background: linear-gradient(rgba(236, 122, 122, 1), rgba(255, 255, 255, 1), rgba(119, 135, 224, 1));
     
 }
 main#home-main .newFont {
@@ -194,13 +202,11 @@ main#home-main .msec {
     background-repeat: no-repeat;
 }
 main#home-main #hero {
-    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fe0%2Ffe%2Ff6%2Fe0fef66d4ec9ab8489875d3868f7d44f.jpg&f=1&nofb=1);
     grid-column: 1/2;
     background-size: cover;
     grid-row: 1/2;
 }
 main#home-main #event {
-    background-image: url(https://www.visitogden.com/imager/www_trumba_com/i/DgCfoSwC0nvreRSKRTnG99ao_760916c9b318a56d09f73cfb02e61dc7.jpeg);
     grid-column: 1/2;
 }
 
@@ -229,7 +235,6 @@ main#home-main #weather p {
 
 main#home-main #newsRelease {
     height: calc(100% - 10px);
-    background-image: url(https://ogden_images.s3.amazonaws.com/www.standard.net/images/2022/05/17180332/FB_IMG_1642007179129-625x938.jpg);
     opacity: .6;
     grid-row: 3/4;
     grid-column: 1/2;
@@ -276,17 +281,14 @@ main#home-main .spotlight div {
     vertical-align: bottom;
 }
 main#home-main #spotlight1 {
-    background-image: url(https://archive.sltrib.com/images/2016/0109/rockclimbers_011016~0.jpg);
     background-size: cover;
     
 }
 
 main#home-main #spotlight2 {
-    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/d9/f9/69/20190607-120700-largejpg.jpg?w=800&h=-1&s=1);
     background-position: center center;
 }
 main#home-main #spotlight3 {
-    background-image: url(https://scontent-sjc3-1.xx.fbcdn.net/v/t1.6435-9/59555684_10158378990472802_8279368139641192448_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=_g6-137GZvAAX-CVc-n&_nc_ht=scontent-sjc3-1.xx&oh=00_AT_AndPHM_wXokgpqjitoDGH8ZCQzGy8DWrvI2Nrwgmoug&oe=62ACAD9E);
     background-size: cover;
 }
 main#home-main #join {
@@ -330,4 +332,27 @@ main#home-main #spotlight1 {
 }
 main#home-main #spotlight2 {
     background-image: url("https://github.com/rgschmidt14/wdd230/blob/main/chamber/images/dif_sizes/20190607-120700-largejpg-small.jpeg?raw=true");
+}
+
+
+/*Discover Page*/
+/*Main*/
+main#discover-main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+main#discover-main-grid section {
+    margin: 2vw;
+    grid-column: 1/2;
+}
+main#discover-main-grid div#demographics {
+    float: left;
+    grid-row: 1/3;
+}
+main#discover-main-grid div#days-since-last-page-visit {
+    grid-row: 9/10;
+}
+
+main#discover-main-grid section img:hover {
+    filter: drop-shadow(0 0 1rem rgb(29, 52, 128));
 }
