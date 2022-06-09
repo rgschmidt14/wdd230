@@ -356,3 +356,7 @@ main#discover-main-grid div#days-since-last-page-visit {
 main#discover-main-grid section img:hover {
     filter: drop-shadow(0 0 1rem rgb(29, 52, 128));
 }
+
+li.emptyli {
+    list-style-type: none;
+}
