@@ -45,14 +45,14 @@
     main#home-main section {
         grid-column: 1/-1;
     }
-    #weather img {
+    main#home-main #weather img {
 
         height: 150px;
         margin: auto;
         margin-top: -10px;
     }
  
-    #spotlights {
+    main#home-main #spotlights {
         height: 200px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -60,7 +60,7 @@
 
     }
 
-    .spotlight:nth-child(1) {
+    main#home-main .spotlight:nth-child(1) {
         margin-top: 5px;
         height: calc(100% - 20px);
         width: calc(100% - 20px);
@@ -68,13 +68,15 @@
 
     }
 
-    .spotlight:nth-child(2) {
+    main#home-main .spotlight:nth-child(2) {
         margin-top: 5px;
         height: calc(100% - 20px);
         width: calc(100% - 20px);
         grid-column: 2/3;
         
     }
+
+    /*Footer*/
     #footerLogo {
         max-width: 32.5em;
         display: block;
@@ -83,31 +85,40 @@
     }
 
     /*main page grid*/
-    #newsRelease {
+    main#home-main #newsRelease {
         height: 200px;
     }
-    #newsReleaseInfo {
+    main#home-main #newsReleaseInfo {
         height: 200px;
     }
-    #newsReleaseInfo a {
+    main#home-main #newsReleaseInfo a {
         margin-right: 15px;
     }
     /*fixing all the pictures Week06*/
     /*fixing all the pictures Week06*/
-    #hero {
+    main#home-main #hero {
         background-image: url("https://github.com/rgschmidt14/wdd230/blob/main/chamber/images/dif_sizes/e0fef66d4ec9ab8489875d3868f7d44f-1432800277-medium.jpeg?raw=true");
     }
-    #event {
+    main#home-main #event {
         background-image: url("https://github.com/rgschmidt14/wdd230/blob/main/chamber/images/dif_sizes/DgCfoSwC0nvreRSKRTnG99ao_760916c9b318a56d09f73cfb02e61dc7.jpeg?raw=true");
     }
-    #newsRelease {
+    main#home-main #newsRelease {
         background-image: url("https://github.com/rgschmidt14/wdd230/blob/main/chamber/images/dif_sizes/FB_IMG_1642007179129-625x938.jpeg?raw=true");
     }
-    #spotlight1 {
+    main#home-main #spotlight1 {
         background-image: url("https://github.com/rgschmidt14/wdd230/blob/main/chamber/images/dif_sizes/rockclimbers_011016~0.jpeg?raw=true");
     }
-    #spotlight2 {
+    main#home-main #spotlight2 {
         background-image: url("https://github.com/rgschmidt14/wdd230/blob/main/chamber/images/dif_sizes/20190607-120700-largejpg-small.jpeg?raw=true");
     }
     
+
+    /*Discover Page*/
+    /*Main*/
+    main#discover-main-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    main#discover-main-grid section {
+        grid-column: 2/3;
+    }
 }

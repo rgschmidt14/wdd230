@@ -57,11 +57,7 @@ document.getElementById("yearFooter").innerHTML = ` ${readerOutcome1[5]}`;
 var readerOutcome2 = document.lastModified
 document.getElementById("recentUpDate").innerHTML = `Last Modified: ${readerOutcome2}`;
 
-//Mon/Tue Announcement ......This is not working....
-let banner = document.querySelector("#banner")
-if (!(readerOutcome1[2] === daysNames[1] || readerOutcome1[2] === daysNames[2])) {
-    banner.style.display = "none";
-};
+
 
 
 
@@ -79,3 +75,65 @@ if (!(readerOutcome1[2] === daysNames[1] || readerOutcome1[2] === daysNames[2]))
 // let locat = document.querySelector("#event")
 // console.log(newPic, locat)
 // rightSizePlz(newPic, locat)
+
+
+
+//Discover Page
+
+
+//loading images
+function imageReplacer(img) {
+    img.setAttribute('src', img.getAttribute('data-src'));
+    img.onload = () => {img.removeAttribute("data-src")};
+};
+let loadThese = document.querySelectorAll("img[data-src]");
+
+if('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(
+        (items, observer) => {
+            items.forEach((item) => {
+                if(item.isIntersecting) {
+                    imageReplacer(item.target);
+                    observer.unobserve(item.target);
+                }
+            });
+        });
+        loadThese.forEach((img) => {
+            observer.observe(img);
+        });
+} else {
+    loadThese.forEach((img) => {
+        imageReplacer(img);
+    });
+};
+
+//calculating days since last visit:
+if (!(localStorage.last_visit)) {
+    localStorage.last_visit = (new Date()).getTime();
+    console.log(localStorage.last_visit, "it worked")
+}
+
+
+function dateSubtractor(newDate, oldDate) {
+    console.log(newDate, oldDate)
+    let miliseconds = (newDate - oldDate);
+    let seconds = (miliseconds / 1000);
+    let minutes = (seconds / 60);
+    let hours = (minutes / 60);
+    let days = (hours / 24);
+    let returnObject = {
+        "days":days,
+        "hours":hours,
+        "minutes":minutes,
+        "seconds":seconds,
+        "default":miliseconds
+    }
+    console.log(returnObject)
+    return returnObject
+}
+
+let daysSinceLastVisit = dateSubtractor(readerOutcome1[0].getTime(), Number(localStorage.last_visit));
+if (document.URL.includes("discover/")) {
+document.querySelector("#visit-interval-calculated").innerHTML =  (Math.round(daysSinceLastVisit["days"] * 1) / 1);
+}
+localStorage.last_visit = (new Date()).getTime();
