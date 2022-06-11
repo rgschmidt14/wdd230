@@ -61,8 +61,18 @@ caption {
 html {
     font-size: 5vw;
 }
-@media (min-width: 1000px) {
-html {
-    font-size: 50px;
+@media (min-width: 800px) {
+    html {
+        font-size: 40px;
 }
+}
+@media (max-width: 350px) {
+    html {
+        font-size: 17.5px;
+    }
+}
+@media (max-width: 331px) {
+    .table-formatting {
+        width: max-content;
+    }
 }
