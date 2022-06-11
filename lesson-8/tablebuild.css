@@ -56,4 +56,13 @@ caption {
 .table-formatting {
     box-shadow: 10px 10px 10px -5px black;
     max-width: max-content;
+    margin: auto;
+}
+html {
+    font-size: 5vw;
+}
+@media (min-width: 1000px) {
+html {
+    font-size: 50px;
+}
 }
