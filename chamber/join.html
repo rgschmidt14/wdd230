@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Generic Required Stuff-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Page Name and Description-->
+        <title>Ogden Chamber</title>
+        <meta name="description" content="Ogden Chamber of Commerce website. Made as a school project for the purpose of learning html, css, and javascript languages.">
+        <link rel="shortcut icon" href="images/ogden_utah_bug-2763825397.png">
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <!--CSS (Styles)-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/ogden_utah_logo.webp" alt="logo" id="logoPic">
+            <div id="title">
+                <h1>Ogden Chamber of Commerce</h1>
+            </div>
+            <p id="giveMeTodaysDate">Normally we display the date here, but something went wrong.</p>
+            <nav>
+                <ul id="nav2">
+                    <li><a href="https://twitter.com"><img src="images/twitter.com.ico"></a></li>
+                    <li><a href="https://www.indeed.com"><img src="images/www.indeed.com.ico"></a></li>
+                </ul>
+                <button id="hamburgerBtn"><span id="hamburgerBtn≡">&#x2261;</span><span id="hamburgerBtnX">x</span></button>
+                <ul id="nav1">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover">Discover</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Another Pg</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="join-main">
+
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Personal/Business Info</legend>
+                    <label class="nameTop">First Name: <input type="text" name="fname" required></label>
+                    <label class="nameTop">Last Name: <input type="text" name="lname" required></label>
+                    <label class="nameTop">Business Position: <input title="Enter your position in your company..." type="text" name="position" placeholder="e.g. CEO, Owner, etc."></label> <!--How to make 7 letters or longer-->
+                    <label class="nameTop">Email: <input type="email" name="email" placeholder="email@domain.com" required></label>
+                    <label class="nameTop">Cell Phone Number: <input type="tel" name="phone" required></label>
+                    <label class="nameTop">Business Name: <input title="Enter the name of your Business..." type="text" name="business" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label class="nameRight"><input type="radio" name="membershipL" value="np" required> NP Membership</label><!--is for non-profit organizatrions and there is no fee.-->
+                    <label class="nameRight"><input type="radio" name="membershipL" value="bronze"> Bronze Membership</label>
+                    <label class="nameRight"><input type="radio" name="membershipL" value="silver"> Silver Membership</label>
+                    <label class="nameRight"><input type="radio" name="membershipL" value="gold"> Gold Membership</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Description</legend>
+                    <label class="nameTop"><textarea name="description"></textarea>
+                </fieldset>
+                <input id="currentDateAndTime" type="hidden">
+                <button class="submitBtn" type="submit">Join The Ogden Chamber of Commerce</button>
+
+
+            </form>
+
+
+
+
+        </main>
+        <footer>
+            <div class="horizontalLine"></div>
+            <img src="images/ogden_utah_logo.png" alt="logo" id="footerLogo">
+            <ul>
+                <li><h3>Contact Info:</h3></li>
+                <li><h4>Phone:</h4> 123-456-7890 </li>
+                <li><h4>Email:</h4> email@e.mail </li>
+                <li><h4>Business Hours:</h4> 9am-5pm UTC-6 </li>
+                <li><a href="#">Map Link</a></li>
+            </ul>
+            <div class="baseFooter">
+                <ul>
+                    <li>&#169;</li>
+                    <li id="yearFooter"></li>
+                    <li>ogdencitychamber.com</li>
+                    <li>___ Ryan Schmidt</li>
+                    <li> ___ WDD230 Project ___</li>
+                    <li id="recentUpDate"></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="js/script.js" defer></script>
+        <script src="js/windchill.js" defer></script>
+        <script src="js/bannerMain.js" defer></script>
+    </body>
+</html>

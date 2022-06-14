@@ -101,4 +101,10 @@
     main#home-main #spotlight3 {
         background-image: url("https://github.com/rgschmidt14/wdd230/blob/main/chamber/images/dif_sizes/59555684_10158378990472802_8279368139641192448_n-extrasmall.jpeg?raw=true");
     }
+
+    /*thank you*/
+    #thank-you-main h2{
+        margin: 103px;
+        font-size: 52px;
+    }
 }
