@@ -29,6 +29,11 @@ section {
     border: 1px solid black;
     padding: 2vh 10vw;
     margin: 2vh 1vw;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+section:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 1px 1px 3vw gray;
 }
 header {
     max-width: 65vw;
