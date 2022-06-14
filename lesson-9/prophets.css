@@ -1,0 +1,36 @@
+img {
+    display: block;
+    box-shadow: 1px 1px 3vw gray;
+    max-width: 100%;
+    margin: auto;
+}
+main {
+    margin: auto;
+    width: max-content;
+}
+body {
+    background-image: linear-gradient(lightgreen, lightblue);
+}
+h2, h1, ul {
+    text-align: center;
+}
+h2 {
+    margin: .5vw 0 2vw 0;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;;
+}
+section {
+    max-width: 65vw;
+    border: 1px solid black;
+    padding: 2vh 10vw;
+    margin: 2vh 1vw;
+}
+header {
+    max-width: 65vw;
+    margin: auto;
+}
