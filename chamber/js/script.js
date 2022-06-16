@@ -137,3 +137,49 @@ if (document.URL.includes("discover/")) {
 document.querySelector("#visit-interval-calculated").innerHTML =  (Math.round(daysSinceLastVisit["days"] * 1) / 1);
 }
 localStorage.last_visit = (new Date()).getTime();
+
+
+//Doing the directory
+
+requestURL = "json/data.json";
+const cards = document.querySelector("#directory-cards-cards");
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        console.table(jsonObject); //temporary to check it worked in valid format
+        const businesses = jsonObject['business'];
+        businesses.forEach(displayBusiness);
+});
+function displayBusiness(business) {
+    //creating elements to insert
+    let card = document.createElement('section');
+    let h2 = document.createElement('h2');
+    let ul = document.createElement('ul');
+    let portrait = document.createElement('img');
+
+    //Function to add info to card's ul
+    function liAdder(title, info) {
+        let li = document.createElement('li');
+        li.textContent = `${title}${info}`;
+        return li;
+    };
+
+    //adding info about business in li format to the ul //copy and paste to add more
+    ul.appendChild(liAdder("My Birthday: ", business.birthdate));
+    ul.appendChild(liAdder("I was born in : ", business.birthplace));
+
+    //using setAttribute to make the image show up with alt text and a lazy load fashion
+    portrait.setAttribute('src', business.imageurl);
+    portrait.setAttribute('alt', `Portrait of ${business.fullname} the ${ordinalNumberFix(business.order)} Latter-day President`);
+    portrait.setAttribute('loading', 'lazy');
+
+    //adding the h2 and portrait(img) elements to the card
+    card.appendChild(h2);
+    card.appendChild(ul)
+    card.appendChild(portrait);
+
+    //Adding the card to the html with all of its children
+    document.querySelector('div.cards').appendChild(card);
+};
