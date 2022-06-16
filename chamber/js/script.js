@@ -157,7 +157,7 @@ function displayBusiness(business) {
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let ul = document.createElement('ul');
-    let portrait = document.createElement('img');
+    let businessLogo = document.createElement('img');
 
     //Function to add info to card's ul
     function liAdder(title, info) {
@@ -167,19 +167,23 @@ function displayBusiness(business) {
     };
 
     //adding info about business in li format to the ul //copy and paste to add more
-    ul.appendChild(liAdder("My Birthday: ", business.birthdate));
-    ul.appendChild(liAdder("I was born in : ", business.birthplace));
+    ul.appendChild(liAdder("Address: ", business.address));
+    ul.appendChild(liAdder("Phone Number: ", business.phone));
+    ul.appendChild(liAdder("Website URL: ", business.website_URL));
+    ul.appendChild(liAdder("Membership Level: ", business.membership_level));
+    ul.appendChild(liAdder("Other Info: ", business.other_info));
+    
 
     //using setAttribute to make the image show up with alt text and a lazy load fashion
-    portrait.setAttribute('src', business.imageurl);
-    portrait.setAttribute('alt', `Portrait of ${business.fullname} the ${ordinalNumberFix(business.order)} Latter-day President`);
-    portrait.setAttribute('loading', 'lazy');
+    businessLogo.setAttribute('src', business.image);
+    businessLogo.setAttribute('alt', `alt info`);
+    businessLogo.setAttribute('loading', 'lazy');
 
     //adding the h2 and portrait(img) elements to the card
     card.appendChild(h2);
-    card.appendChild(ul)
-    card.appendChild(portrait);
+    card.appendChild(ul);
+    card.appendChild(businessLogo);
 
     //Adding the card to the html with all of its children
-    document.querySelector('div.cards').appendChild(card);
+    document.querySelector('#directory-cards-cards').appendChild(card);
 };
