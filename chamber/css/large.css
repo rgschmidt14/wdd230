@@ -107,4 +107,8 @@
         margin: 103px;
         font-size: 52px;
     }
+
+    #directory-main div#directory-cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

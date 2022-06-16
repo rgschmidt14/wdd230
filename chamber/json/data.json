@@ -55,31 +55,40 @@
         "other_info": "Through the responsible transformation of Earth's natural resources, we help keep people safe, feed the world and enrich lives, every day."
       },
       {
-        "name": "Andrew Jackson Plumbing Heating and Air",
-        "address": "",
-        "phone": 0,
-        "website_URL": "",
-        "image": "",
-        "membership_level": "",
-        "other_info": ""
+        "name": "United Way of Northern Utah",
+        "address": "2955 Harrison Blvd. #201",
+        "phone": 8013995584,
+        "website_URL": "http://www.uwnu.org/",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffoundation.wsd.net%2Fimages%2Fnavi%2Ftiles%2FUnited-Way-Tile-380.png&f=1&nofb=1",
+        "membership_level": "gold member",
+        "other_info": "We Unite people and organizations to build a healthy, stable, and well-educated community where individuals, families, and neighborhoods thrive."
       },
       {
-        "name": "",
-        "address": "",
-        "phone": 0,
-        "website_URL": "",
-        "image": "",
-        "membership_level": "",
-        "other_info": ""
+        "name": "iMpact Utah",
+        "address": "380 Technology Court, Suite 200, Lindon, Utah 84042",
+        "phone": 8018030871,
+        "website_URL": "https://impactutah.org/",
+        "image": "https://149645080.v2.pressablecdn.com/wp-content/uploads/2021/08/header-logo-2.png",
+        "membership_level": "silver member",
+        "other_info": "We’ve been where you are, and we know how to help. We are a full-service training and consultation organization, your resource to accelerate profitable growth and competitiveness in your company so your business will thrive, not just survive. Our purpose is to share knowledge that improves lives."
       },
       {
-        "name": "",
-        "address": "",
-        "phone": 0,
-        "website_URL": "",
-        "image": "",
-        "membership_level": "",
-        "other_info": ""
+        "name": "Barnes Aerospace/Ogden Division",
+        "address": "1025 S Depot Drive",
+        "phone": 8019172000,
+        "website_URL": "http://www.barnesaero.com/",
+        "image": "https://www.barnesaero.com/images/ba_logo.png",
+        "membership_level": "bronze partner",
+        "other_info": "Barnes Aerospace provides superior manufacturing solutions and comprehensive component overhaul and repair services to the world’s major turbine manufacturers, commercial airlines, and the military."
+      },
+      {
+        "name": "Northrop Grumman",
+        "address": "5770 S Missile Way, Roy, UT 84067",
+        "phone": 7032804468,
+        "website_URL": "http://www.northropgrumman.com/",
+        "image": "https://chambermaster.blob.core.windows.net/images/customers/2934/members/2764/logos/MEMBER_LOGOSEARCH/NGCPH-40229-004P-v2.jpg",
+        "membership_level": "gold partner",
+        "other_info": "Northrop Grumman solves the toughest problems in space, aeronautics, defense and cyberspace to meet the ever evolving needs of our customers worldwide. Our 90,000 employees are Defining Possible every day using science, technology and engineering to create and deliver advanced systems, products and services."
       }
     ]
   }

@@ -142,7 +142,7 @@ localStorage.last_visit = (new Date()).getTime();
 //Doing the directory
 
 requestURL = "json/data.json";
-const cards = document.querySelector("#directory-cards-cards");
+const cards = document.querySelector("#directory-cards");
 fetch(requestURL)
     .then(function (response) {
         return response.json();
@@ -162,9 +162,11 @@ function displayBusiness(business) {
     //Function to add info to card's ul
     function liAdder(title, info) {
         let li = document.createElement('li');
-        li.textContent = `${title}${info}`;
+        li.textContent = `<strong>${title}</strong>${info}`; ////////fix this///////////////////
         return li;
     };
+
+    h2.textContent = business.name;
 
     //adding info about business in li format to the ul //copy and paste to add more
     ul.appendChild(liAdder("Address: ", business.address));
@@ -180,10 +182,11 @@ function displayBusiness(business) {
     businessLogo.setAttribute('loading', 'lazy');
 
     //adding the h2 and portrait(img) elements to the card
+    card.appendChild(businessLogo);
     card.appendChild(h2);
     card.appendChild(ul);
-    card.appendChild(businessLogo);
+    
 
     //Adding the card to the html with all of its children
-    document.querySelector('#directory-cards-cards').appendChild(card);
+    document.querySelector('#directory-cards').appendChild(card);
 };

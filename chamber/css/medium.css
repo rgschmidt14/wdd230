@@ -121,4 +121,10 @@
     main#discover-main-grid section {
         grid-column: 2/3;
     }
+
+    /*directory*/
+    #directory-main div#directory-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
