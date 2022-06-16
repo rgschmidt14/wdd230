@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Page Name and Description-->
-        <title>Join - Ogden Chamber</title>
+        <title>Directory - Ogden Chamber</title>
         <meta name="description" content="Ogden Chamber of Commerce website. Made as a school project for the purpose of learning html, css, and javascript languages.">
         <link rel="shortcut icon" href="images/ogden_utah_bug-2763825397.png">
         <!--Fonts-->
@@ -34,39 +34,14 @@
                 <ul id="nav1">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="discover">Discover</a></li>
-                    <li><a href="#">Join</a></li>
-                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="#">Directory</a></li>
                 </ul>
             </nav>
         </header>
-        <main id="join-main">
+        <main id="directory-main">
 
-            <form method="get" action="thankyou.html">
-                <fieldset>
-                    <legend>Personal/Business Info</legend>
-                    <label class="nameTop">First Name: <input type="text" name="fname" required></label>
-                    <label class="nameTop">Last Name: <input type="text" name="lname" required></label>
-                    <label class="nameTop">Business Position: <input title='No numbers or special characters besides a dash "-"' type="text" name="position" pattern="[A-Za-z- ]{7,}" placeholder="e.g. CEO, Owner, etc."></label> <!--How to make 7 letters or longer-->
-                    <label class="nameTop">Email: <input type="email" name="email" placeholder="email@domain.com" required></label>
-                    <label class="nameTop">Cell Phone Number: <input type="tel" name="phone" required></label>
-                    <label class="nameTop">Business Name: <input title="Enter the name of your Business..." type="text" name="business" required></label>
-                </fieldset>
-                <fieldset>
-                    <legend>Membership Level</legend>
-                    <label class="nameRight"><input type="radio" name="membershipL" value="np" required> NP Membership</label><!--is for non-profit organizatrions and there is no fee.-->
-                    <label class="nameRight"><input type="radio" name="membershipL" value="bronze"> Bronze Membership</label>
-                    <label class="nameRight"><input type="radio" name="membershipL" value="silver"> Silver Membership</label>
-                    <label class="nameRight"><input type="radio" name="membershipL" value="gold"> Gold Membership</label>
-                </fieldset>
-                <fieldset>
-                    <legend>Business Description</legend>
-                    <label class="nameTop"><textarea name="description"></textarea>
-                </fieldset>
-                <input id="currentDateAndTime" type="hidden">
-                <button class="submitBtn" type="submit">Join The Ogden Chamber of Commerce</button>
-
-
-            </form>
+           
 
 
 
