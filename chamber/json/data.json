@@ -1,0 +1,85 @@
+{
+    "business": [
+      {
+        "name": "1 Boyle Appliances and Service Center",
+        "address": "146 East 36th Street",
+        "phone": 8013935365,
+        "website_URL": "https://www.boyleappliance.com/",
+        "image": "https://d12mivgeuoigbq.cloudfront.net/assets/store-logos/gboy1.png",
+        "membership_level": "not a member",
+        "other_info": "Family Owned & Operated since 1856"
+      },
+      {
+        "name": "Denton Durham Jones Pinegar",
+        "address": "372 24th Street, Suite 400",
+        "phone": 8014997717,
+        "website_URL": "http://www.djplaw.com/",
+        "image": "https://www.dentons.com/-/media/images/website/logos/svg/landing-pages/goldenspike/dentons-djp-logo-rgb.svg?h=41&iar=0&w=227&hash=20BC0DF8438EBC4CE05E1CA139CA9B82",
+        "membership_level": "gold",
+        "other_info": "Dentons launches combination with Durham Jones & Pinegar in Utah (part of project Golden Spike)"
+      },
+      {
+        "name": "Apple Spice Box Lunch Delivery & Catering",
+        "address": "148 W Patterson St., Suite A",
+        "phone": 8014758555,
+        "website_URL": "http://applespice.com/",
+        "image": "https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.applespice.com/wp-content/uploads/2017/01/asj-logo-retina.png",
+        "membership_level": "not a member",
+        "other_info": "Serving Individually Packed Meals!"
+      },
+      {
+        "name": "Great Salt Lake Artemia",
+        "address": "1750 West 2450 South",
+        "phone": 8016221111,
+        "website_URL": "http://www.gsla.us/",
+        "image": "https://www.gsla.us/wp-content/uploads/thegem-logos/logo_c76a2409ba94d2a709570969b9b0eefe_2x.png",
+        "membership_level": "not a member",
+        "other_info": "Globally Recognized Artemia Specialists (Shrimp and Fish Hatchery Products)"
+      },
+      {
+        "name": "Weber County Library",
+        "address": "2464 Jefferson Ave",
+        "phone": 8013372618,
+        "website_URL": "http://www.weberpl.lib.ut.us/",
+        "image": "https://www.weberpl.lib.ut.us/sites/default/themes/omega_weber/logo.png",
+        "membership_level": "not a member",
+        "other_info": "Oceans of Possibilities Summer Reading Programs"
+      },
+      {
+        "name": "John Quincy Adams Penitentiary",
+        "address": "",
+        "phone": 0,
+        "website_URL": "",
+        "image": "",
+        "membership_level": "",
+        "other_info": ""
+      },
+      {
+        "name": "Andrew Jackson Plumbing Heating and Air",
+        "address": "",
+        "phone": 0,
+        "website_URL": "",
+        "image": "",
+        "membership_level": "",
+        "other_info": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": 0,
+        "website_URL": "",
+        "image": "",
+        "membership_level": "",
+        "other_info": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": 0,
+        "website_URL": "",
+        "image": "",
+        "membership_level": "",
+        "other_info": ""
+      }
+    ]
+  }
