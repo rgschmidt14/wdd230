@@ -162,7 +162,7 @@ function displayBusiness(business) {
     //Function to add info to card's ul
     function liAdder(title, info) {
         let li = document.createElement('li');
-        li.textContent = `<strong>${title}</strong>${info}`; ////////fix this///////////////////
+        li.textContent = `${title}${info}`; ////////fix this///////////////////
         return li;
     };
 
