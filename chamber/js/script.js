@@ -115,7 +115,6 @@ if (!(localStorage.last_visit)) {
 
 
 function dateSubtractor(newDate, oldDate) {
-    console.log(newDate, oldDate)
     let miliseconds = (newDate - oldDate);
     let seconds = (miliseconds / 1000);
     let minutes = (seconds / 60);
@@ -128,7 +127,6 @@ function dateSubtractor(newDate, oldDate) {
         "seconds":seconds,
         "default":miliseconds
     }
-    console.log(returnObject)
     return returnObject
 }
 
@@ -148,7 +146,6 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        console.table(jsonObject); //temporary to check it worked in valid format
         const businesses = jsonObject['business'];
         businesses.forEach(displayBusiness);
 });

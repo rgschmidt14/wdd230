@@ -70,11 +70,11 @@
             <!-- Weather -->
             <section id="weather" class="msec">
                 <h2>Weather</h2>
-                <img src="images/dif_sizes/01sunny-tinycloud-t9953_transp-extrasmall.png?raw=true">
+                <img id="weather-icon" src="images/dif_sizes/01sunny-tinycloud-t9953_transp-extrasmall.png?raw=true">
                 <ul>
-                    <li><p><span id="temperature">75</span>°F Partly Cloudy</p></li>
-                    <li><p><span id="windMph">10</span>mph Wind</p></li>
-                    <li><p>Feels Like (Chill Factor): <span id="windChill">75</span>°F</p></li>
+                    <li><p><span id="temperature" class="current-temp">75</span>°F <span class="descOfWeather">Partly Cloudy</span></p></li>
+                    <li><p><span id="windMph" class="windMph">10</span>mph Wind</p></li>
+                    <li><p>Feels Like: <span id="windChill">75</span>°F</p></li>
                 </ul>
             </section>
 
@@ -135,7 +135,8 @@
             </div>
         </footer>
         <script src="js/script.js" defer></script>
-        <script src="js/windchill.js" defer></script>
+        <script src="js/weatherapi.js" defer></script>
+
         <script src="js/bannerMain.js" defer></script>
     </body>
 </html>

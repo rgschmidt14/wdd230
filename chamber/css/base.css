@@ -228,6 +228,9 @@ main#home-main #weather ul {
 main#home-main #weather img {
     grid-column: 1/2;
     grid-row: 2/3;
+    max-height: 100%;
+    margin: auto;
+    margin-top: -8vw;
 }
 main#home-main #weather p {
     margin: 8px 0;

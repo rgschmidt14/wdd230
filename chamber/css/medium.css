@@ -45,11 +45,14 @@
     main#home-main section {
         grid-column: 1/-1;
     }
+    main#home-main #weather {
+        grid-row-gap: 20px;
+    }
     main#home-main #weather img {
 
-        height: 150px;
-        margin: auto;
-        margin-top: -10px;
+        height: 180px;
+        margin-right: 25px;
+        margin-top: -35px;
     }
  
     main#home-main #spotlights {
