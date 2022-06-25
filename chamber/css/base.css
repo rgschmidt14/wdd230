@@ -441,3 +441,9 @@ button.submitBtn:focus, label.nameRight:focus, .nameTop input:focus, .nameTop te
 #directory-main div#directory-cards section:nth-child(9) img {
     background-color: lightgray;
 }
+
+/*weather-api*/
+#weather-api-main {
+    display: grid;
+    text-align: center;
+}
