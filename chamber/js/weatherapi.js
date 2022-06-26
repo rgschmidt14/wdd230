@@ -4,6 +4,7 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('.descOfWeather');
 const currentWindSpeed = document.querySelector('.windMph');
 
+
 const url = 'https://api.openweathermap.org/data/2.5/weather?q=Ogden&units=imperial&APPID=15d92f0c10640be1ab22b43ff41477ab';
 //Ogden,ut,us
 
