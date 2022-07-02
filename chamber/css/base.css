@@ -478,5 +478,14 @@ main#join-main ul {
 main#contact-us-main {
     display: grid;
 }
+main#contact-us-main h2 {
+    text-align: left;
+}
+main#contact-us-main ul {
+    list-style-type: none;
+}
+main#contact-us-main ul li {
+    font-size: 1.1em;
+}
 
 /* Message Sent Page */
