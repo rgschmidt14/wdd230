@@ -71,7 +71,9 @@
         grid-area: 2 / 1 / span 1 / span 1;
         display: block;
     }
-
+    main#home-main a:nth-child(3) {
+        display: block;
+    }
     main#home-main .spotlight:nth-child(3) {
         height: calc(100% - 20px);
         width: calc(100% - 20px);

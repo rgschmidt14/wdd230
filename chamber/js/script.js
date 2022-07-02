@@ -1,3 +1,6 @@
+//checking what page we are on
+current = window.location.pathname;
+
 //Toggle for Hamburger Menu
 function toggleMenu() {
     document.getElementById("nav1").classList.toggle("clicked")
@@ -138,7 +141,7 @@ localStorage.last_visit = (new Date()).getTime();
 
 
 //Doing the directory
-
+if (current == '/chamber/directory.html', current == '/chamber/index.html') {
 requestURL = "json/data.json";
 const cards = document.querySelector("#directory-cards");
 fetch(requestURL)
@@ -147,8 +150,11 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         const businesses = jsonObject['business'];
-        businesses.forEach(displayBusiness);
+        if (current == '/chamber/directory.html') {
+            businesses.forEach(displayBusiness);
+        };
 });
+};
 function displayBusiness(business) {
     //creating elements to insert
     let card = document.createElement('section');
@@ -187,3 +193,20 @@ function displayBusiness(business) {
     //Adding the card to the html with all of its children
     document.querySelector('#directory-cards').appendChild(card);
 };
+
+//putting businesses in the home page
+
+if (current == '/chamber/index.html') {
+    doSpotlights()
+} //else do nothing
+
+function doSpotlights() {
+    let sp1h2 = document.querySelector("#spotlight1 h2");
+    let sp2h2 = document.querySelector("#spotlight2 h2");
+    let sp3h2 = document.querySelector("#spotlight3 h2");
+    let newsp1h2 = "";
+
+    sp1h2.innerHTML = "";
+    sp2h2.innerHTML = "";
+    sp3h2.innerHTML = "";
+}

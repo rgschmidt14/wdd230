@@ -1,3 +1,6 @@
+//checking what page we are on
+current = window.location.pathname;
+
 // select HTML elements in the document
 const currentTemp = document.querySelector('.current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
@@ -19,11 +22,12 @@ function  displayResults(weatherData) {
   weatherIcon.setAttribute('alt', desc);
   captionDesc.textContent = desc;
 
-
-  let temp = document.getElementById("temperature").innerHTML;
-  let wind = document.getElementById("windMph").innerHTML;
-  let chill = windChill(wind, temp);
-  document.getElementById("windChill").innerHTML = chill
+  if (current == '/chamber/index.html') {
+    let temp = document.getElementById("temperature").innerHTML;
+    let wind = document.getElementById("windMph").innerHTML;
+    let chill = windChill(wind, temp);
+    document.getElementById("windChill").innerHTML = chill
+  };
 
   
 }
@@ -32,7 +36,7 @@ async function apiFetch() {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // this is for testing the call
+      // console.log(data); this is for testing the call
       displayResults(data);
     } else {
         throw Error(await response.text());

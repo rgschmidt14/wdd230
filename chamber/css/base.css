@@ -142,8 +142,11 @@ main#home-main .spotlight {
     width: calc(100% - 20px);
 }
 
-main#home-main .spotlight:nth-child(3) {
+main#home-main a:nth-child(3) {
     display: none;
+}
+main#home-main a:hover {
+    cursor: pointer;
 }
 main#home-main #join {
     display: none;
