@@ -5,8 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Page Name and Description-->
-        <title>Thank you - Ogden Chamber</title>
-        <meta name="description" content="Ogden Chamber of Commerce website. Made as a school project for the purpose of learning html, css, and javascript languages.">
+        <title>Contact - Ogden Chamber</title>
+        <meta name="description" content="Contact the Chamber of Commerce Staff by filling out the form below.">
         <link rel="shortcut icon" href="images/ogden_utah_bug-2763825397.png">
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,13 +36,25 @@
                     <li><a href="discover">Discover</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="contact-us.html">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <main id="thank-you-main">
+        <main id="contact-us-main">
+            <form method="get" action="message-sent.html">
+                <fieldset>
+                    <legend>Personal/Business Info</legend>
+                    <label class="nameTop">Full Name: <input type="text" name="name" required></label>
+                    <label class="nameTop">Email: <input type="email" name="email" placeholder="email@domain.com" required></label>
+                    <label class="nameTop">Business Name: <input title="Enter the name of your Business..." type="text" name="business" required></label>
+                    <label class="nameTop">Comment: <textarea name="description" required></textarea>
+                </fieldset>
+                <input id="currentDateAndTime" type="hidden">
+                <button class="submitBtn" type="submit">Send Message</button>
 
-            <h2>Thank you for Joining The Ogden Chamber of Commerce!</h2>
+
+            </form>
+            
 
 
 

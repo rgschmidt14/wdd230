@@ -1,7 +1,12 @@
 @media (min-width: 64em) {
     body {
         max-width: 64em;
-        margin: auto;
+        margin: 0 45px 0px 15px;
+    }
+    @media (min-width: 68.5em) {
+        body {
+            margin: auto;
+        }
     }
     /*Setting the grid in the navigation and header*/
     #nav2 li {

@@ -1,3 +1,6 @@
+body {
+    margin: 0px 15px;
+}
 #banner {
     height: max-content;
     padding: 5px 0px;
@@ -189,7 +192,7 @@ main#home-main section {
     
 }#heroJoinBtn:hover {
     background: linear-gradient(rgba(236, 122, 122, 1), rgba(255, 255, 255, 1), rgba(119, 135, 224, 1));
-    
+    cursor: pointer;
 }
 main#home-main .newFont {
     font-family: cursive;
@@ -415,6 +418,21 @@ button.submitBtn:focus, label.nameRight:focus, .nameTop input:focus, .nameTop te
     background-color: #febf1000;
     border:solid 3px #13B0D7;
 }
+.no-top-margin {
+    margin-top: 0px;
+}
+.no-bottom-margin {
+    margin-block-end: 0em;
+}
+main#join-main h2 {
+    text-align: left;
+}
+main#join-main p {
+    margin-left: 2vw;
+}
+main#join-main ul {
+    margin-left: 3vw;
+}
 /* Thank you*/
 #thank-you-main h2{
     margin: 10vw;
@@ -453,3 +471,12 @@ button.submitBtn:focus, label.nameRight:focus, .nameTop input:focus, .nameTop te
     display: grid;
     text-align: center;
 }
+
+
+
+/* Contact Us Page */
+main#contact-us-main {
+    display: grid;
+}
+
+/* Message Sent Page */
