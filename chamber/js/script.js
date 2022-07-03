@@ -206,13 +206,24 @@ async function doSpotlights(businesses) {
             spotlightSilverGoldArray.push(bus)
         };
     });
-
+    let arrayLength = spotlightSilverGoldArray.length;
     let sp1h2 = document.querySelector("#spotlight1 h2");
     let sp2h2 = document.querySelector("#spotlight2 h2");
     let sp3h2 = document.querySelector("#spotlight3 h2");
-    let newsp1h2 = spotlightSilverGoldArray[0].name;
-    let newsp2h2 = "???";
-    let newsp3h2 = "???";
+    console.log(spotlightSilverGoldArray[1])
+    let newsp1 = spotlightSilverGoldArray.pop();
+    let newsp2 = spotlightSilverGoldArray.pop();
+    let newsp3 = spotlightSilverGoldArray.pop();
+    console.log(newsp1);
+    //adding name
+    let newsp1h2 = newsp1.name;
+    let newsp2h2 = newsp1.name;
+    let newsp3h2 = newsp1.name;
+
+    //adding logo
+    document.querySelector("#spotlight1 img").setAttribute("src", newsp1.image);
+    document.querySelector("#spotlight2 img").setAttribute("src", newsp1.image);
+    document.querySelector("#spotlight3 img").setAttribute("src", newsp1.image);
 
     sp1h2.innerHTML = newsp1h2;
     sp2h2.innerHTML = newsp2h2;

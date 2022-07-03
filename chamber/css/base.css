@@ -287,7 +287,6 @@ main#home-main #newsReleaseInfo a {
 
 main#home-main .spotlight {
     display: grid;
-    grid-template-rows: 75% 25%;
 }
 main#home-main .spotlight {
     text-shadow: 0px 1px 3px black;
@@ -297,8 +296,10 @@ main#home-main .spotlight div {
     vertical-align: bottom;
 }
 main#home-main #spotlight1 {
-    background-size: cover;
-    
+    background-size: cover;   
+}
+main#home-main .spotlight img{
+    margin: auto;
 }
 
 
