@@ -212,20 +212,20 @@ async function doSpotlights(businesses) {
     document.querySelector("#spotlight1 h2").remove();
     document.querySelector("#spotlight2 h2").remove();
     document.querySelector("#spotlight3 h2").remove();
-    console.log(spotlightSilverGoldArray[1])
     let newsp1 = spotlightSilverGoldArray.shift();
     let newsp2 = spotlightSilverGoldArray.shift();
     let newsp3 = spotlightSilverGoldArray.shift();
-    console.log(newsp1);
-    
-  
+
+    //adding descriptions
+    document.querySelector("#spotlight1 p").innerHTML = newsp1.other_info;
+    document.querySelector("#spotlight2 p").innerHTML = newsp2.other_info;
+    document.querySelector("#spotlight3 p").innerHTML = newsp3.other_info;
 
     //adding logo
     document.querySelector("#spotlight1 img").setAttribute("src", newsp1.image);
     document.querySelector("#spotlight2 img").setAttribute("src", newsp2.image);
     document.querySelector("#spotlight3 img").setAttribute("src", newsp3.image);
 
-    sp1h2.innerHTML = newsp1h2;
-    sp2h2.innerHTML = newsp2h2;
-    sp3h2.innerHTML = newsp3h2;
+    //to do
+    //add a tags in html and them update them here to send the user to the website.
 }

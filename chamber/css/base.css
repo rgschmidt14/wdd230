@@ -298,8 +298,16 @@ main#home-main .spotlight div {
 main#home-main #spotlight1 {
     background-size: cover;   
 }
-main#home-main .spotlight img{
-    margin: auto;
+main#home-main .spotlight img {
+    margin: 8px auto 0 auto;
+    max-width: 80%;
+    max-height: 50%;
+}
+main#home-main .spotlight p {
+    text-align: left;
+    margin: 5px auto 5px auto;
+    max-width: 80%;
+    max-height: 50%;
 }
 
 
