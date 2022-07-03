@@ -153,6 +153,9 @@ fetch(requestURL)
         if (current == '/chamber/directory.html') {
             businesses.forEach(displayBusiness);
         };
+        if (current == '/chamber/index.html') {
+            doSpotlights(businesses)
+        } //else do nothing
 });
 };
 function displayBusiness(business) {
@@ -194,19 +197,24 @@ function displayBusiness(business) {
     document.querySelector('#directory-cards').appendChild(card);
 };
 
-//putting businesses in the home page
+async function doSpotlights(businesses) {
+    //get gold and silver members only in an array
+    console.log(businesses);
+    let spotlightSilverGoldArray = [];
+    businesses.forEach((bus) => {
+        if(bus.membership_level == "gold partner", bus.membership_level == "silver partner") {
+            spotlightSilverGoldArray.push(bus)
+        };
+    });
 
-if (current == '/chamber/index.html') {
-    doSpotlights()
-} //else do nothing
-
-function doSpotlights() {
     let sp1h2 = document.querySelector("#spotlight1 h2");
     let sp2h2 = document.querySelector("#spotlight2 h2");
     let sp3h2 = document.querySelector("#spotlight3 h2");
-    let newsp1h2 = "";
+    let newsp1h2 = spotlightSilverGoldArray[0].name;
+    let newsp2h2 = "???";
+    let newsp3h2 = "???";
 
-    sp1h2.innerHTML = "";
-    sp2h2.innerHTML = "";
-    sp3h2.innerHTML = "";
+    sp1h2.innerHTML = newsp1h2;
+    sp2h2.innerHTML = newsp2h2;
+    sp3h2.innerHTML = newsp3h2;
 }

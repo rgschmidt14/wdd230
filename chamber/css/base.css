@@ -151,6 +151,9 @@ main#home-main a:hover {
 main#home-main #join {
     display: none;
 }
+main#home-main #join a button{
+    cursor: pointer;
+}
 footer ul {
     text-align: center;
 }
@@ -287,9 +290,8 @@ main#home-main .spotlight {
     grid-template-rows: 75% 25%;
 }
 main#home-main .spotlight {
-    color: white;
     text-shadow: 0px 1px 3px black;
-    background: darkblue;
+    background: white;
 }
 main#home-main .spotlight div {
     vertical-align: bottom;
@@ -342,12 +344,12 @@ main#home-main #event {
 main#home-main #newsRelease {
     background-image: url("https://github.com/rgschmidt14/wdd230/blob/main/chamber/images/dif_sizes/FB_IMG_1642007179129-625x938-small.jpg?raw=true");
 }
-main#home-main #spotlight1 {
+/* main#home-main #spotlight1 {
     background-image: url("https://github.com/rgschmidt14/wdd230/blob/main/chamber/images/dif_sizes/rockclimbers_011016~0.jpeg?raw=true");
 }
 main#home-main #spotlight2 {
     background-image: url("https://github.com/rgschmidt14/wdd230/blob/main/chamber/images/dif_sizes/20190607-120700-largejpg-small.jpeg?raw=true");
-}
+} */
 
 
 /*Discover Page*/

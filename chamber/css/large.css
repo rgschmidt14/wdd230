@@ -97,7 +97,7 @@
     main#home-main #newsRelease {
         background-image: url("https://github.com/rgschmidt14/wdd230/blob/main/chamber/images/dif_sizes/FB_IMG_1642007179129-625x938-small.jpg?raw=true");
     }
-    main#home-main #spotlight1 {
+    /* main#home-main #spotlight1 {
         background-image: url("https://github.com/rgschmidt14/wdd230/blob/main/chamber/images/dif_sizes/rockclimbers_011016~0-extrasmall.jpg?raw=true");
     }
     main#home-main #spotlight2 {
@@ -105,7 +105,7 @@
     }
     main#home-main #spotlight3 {
         background-image: url("https://github.com/rgschmidt14/wdd230/blob/main/chamber/images/dif_sizes/59555684_10158378990472802_8279368139641192448_n-extrasmall.jpeg?raw=true");
-    }
+    } */
 
     /*thank you*/
     #thank-you-main h2{
