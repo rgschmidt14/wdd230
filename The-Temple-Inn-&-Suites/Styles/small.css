@@ -1,0 +1,8 @@
+* {
+    color: greenyellow;
+}
+@media(max-width:255px) {
+    * {
+        color: orange;
+    }
+}
