@@ -1,6 +1,19 @@
-* {
-    color: greenyellow;
+/* * {color: greenyellow;} */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Monsieur La Doulaise', cursive;
+    text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+/*-----When the Screen is Extremely small for some odd reason-----*/
 @media(max-width:255px) {
     * {
         color: orange;
