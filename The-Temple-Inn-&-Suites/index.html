@@ -19,13 +19,27 @@
     <link rel="stylesheet" href="Styles/medium.css">
     <link rel="stylesheet" href="Styles/large.css">
 </head>
-<body>
+<body class="home">
     <header>
+        <banner id='severe-weather-warning'>This is a severe Weather Warning!<br>From <span id='severe-weather-start-date'></span> thru <span id='severe-weather-start-date'></span> watch out for <span id='severe-weather-type'></span>! Thank you.</banner>
+        <h1>Temple Inn & Suites</h1>
+        <nav>
+            <button id='hamBtn'><span id='hamburger-open-btn'>☰</span><span id='hamburger-close-btn'>X</span></button>
+            <ul>
+                <a href='#'><li>Home</li></a>
+                <a href='#'><li>Temples</li></a>
+                <a href='#'><li>Reservation</li></a>
+                <a href='#'><li>Services</li></a>
+                <a href='#'><li>Contact Us</li></a>
+            </ul>
+        </nav>
+    </header>
+    <!-- <header>
         <banner id="severe-weather-warning">This is a severe Weather Warning!<br>From <span id="severe-weather-start-date"></span> thru <span id="severe-weather-start-date"></span> watch out for <span id="severe-weather-type"></span>! Thank you.</banner>
         <h1>Temple Inn & Suites</h1>
         <nav>
+            <button id="hamBtn"><span id="hamburger-open-btn">☰</span><span id="hamburger-close-btn">X</span></button>
             <ul>
-                <li><span id="hamburger-open-btn">☰</span><span id="hamburger-close-btn">X</span></li>
                 <a href="#"><li>Home</li></a>
                 <a href="#"><li>Temples</li></a>
                 <a href="#"><li>Reservation</li></a>
@@ -33,54 +47,87 @@
                 <a href="#"><li>Contact Us</li></a>
             </ul>
         </nav>
-    </header>
-    <main id="home-main">
+    </header> -->
+    <main class="home">
         <!--Welcome to Temple Inn & Suites-->
-        <section>
-            <a href="#"></a>
+        <section class="ss-home" id="welcome">
+            <a href="#">
+                <h3>Welcome to Temple Inn & Suites!</h3>
+                <img data-src="Assets/images/js-memorial-building-fs" src="Assets/images/placeholder.jpeg">
+                <p>Let our service ease your service.</p>
+            </a>
         </section>
 
 
         <!--Book a Room Now-->
-        <section>
-            <a href="#"></a>
+        <section class="ss-home" id="book-now">
+            <a href="#">
+            <h3>Book Now!</h3>
+            <img data-src="Assets/images/catering_at_joseph_smith_memorial_building.jpeg" src="Assets/images/placeholder.jpeg">
+            <p>Bedroom & Suites, Complimentary Breakfast, Elegant Reception Hall, Playroom & Daycare Services Available</p>
+            </a>
         </section>
 
 
-        <!--Temple Specific Info (Fun to know)-->
-        <section>
-            <a href="#"></a>
+        <!--Temple Highlight Info that is fun to know-->
+        <section class="ss-home" id="temple-highlight">
+            <a href="#">
+            <h3>Temple Highlight</h3>
+            <img data-src="Assets/images/placeholder.jpeg" src="Assets/images/placeholder.jpeg">
+            <p>interesting fact about that temple</p>
+            </a>
         </section>
 
 
         <!--Current Weather-->
-        <section>
-            <a href="#"></a>
+        <section class="ss-home" id="weather-current">
+            <a href="#">
+            <h3>Current Weather at <span id="current-weather-location"></span></h3>
+            <img data-src="Assets/images/placeholder.jpeg" src="Assets/images/placeholder.jpeg">
+            <p>a thought<br>sometemp<br>else</p>
+            </a>
         </section>
 
 
         <!--3-day Forecast-->
-        <section>
-            <a href="#"></a>
+        <section class="ss-home" id="weather-three-day">
+            <a href="#">
+            <h3>3-day F</h3>
+            <img data-src="Assets/images/placeholder.jpeg" src="Assets/images/placeholder.jpeg">
+            <p></p>
+            </a>
         </section>
 
 
         <!--Full-time Temple Missionary?-->
-        <section>
-            <a href="#"></a>
+        <section class="ss-home" id="full-time-miss">
+            <a href="#">
+            <h3>Full-Time Missionaries</h3>
+            <img data-src="Assets/images/620-Refugees6.jpg" src="Assets/images/placeholder.jpeg">
+            <p>Looking for a more long term residence?</p>
+            </a>
         </section>
 
 
         <!--Questions?-->
-        <section>
-            <a href="#"></a>
+        <section class="ss-home" id="questions">
+            <a href="#">
+            <h3>Qs</h3>
+            <img data-src="Assets/images/spring_blossoms_pink.jpeg" src="Assets/images/placeholder.jpeg">
+            <p></p>
+            </a>
         </section>
     </main>
-
-   
-   
     <footer>
-
+        <ul>
+            <li>C 2022</li>
+            <li> - </li>
+            <li><a href='#'>Contact Us</a></li>
+            <li> - </li>
+            <li><a href='#'>Location/Map</a></li>
+        </ul>
+        <ul class='align-right'><li><a href='#'>Research Attributions</li></ul>
     </footer>
+    <script src="Script/site-wide.js" defer></script>
 </body>
 </html>

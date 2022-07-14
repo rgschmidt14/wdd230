@@ -1,5 +1,31 @@
 @media(min-width: 512px) {
-* {
-    color: red;
+/* * {color: red;} */
+
+/*-----Sitewide Header and Footer-----*/
+header {
+    height: calc(var(--HEADER_HEIGHT) * 1.2);
+}
+header nav button#hamBtn {
+    display: none;
+}
+header nav ul {
+    display: flex;
+}
+/*-----Home-----*/
+
+/*--Slideshow turning into scrolling flex/grid--*/
+body.home main section {
+    min-width: 275px;
+    width: 45%;
+    border-radius: 75px;
+    margin: .75vh .75vw;
+    
+}
+body.home main {
+    display: flex;
+    flex-wrap: wrap;
+}
+section.ss-home#welcome {
+    width: 92.85%;
 }
 }

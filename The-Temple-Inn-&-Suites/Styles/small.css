@@ -1,18 +1,206 @@
 /* * {color: greenyellow;} */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Monsieur La Doulaise', cursive;
+:root {
+    --HEADER_HEIGHT: 150px;
+    --FOOTER_HEIGHT: 2.5rem;
+    --EDGES_SMALL: 2vw;
+    --EDGES_LARGE: 10vw;
+    --FANCY_HEADINGS: 'Monsieur La Doulaise', cursive;
+    --REGULAR_HEADINGS: 'Lora', serif;
+    --ALL_OTHER_TEXT: 'Poppings', Sans-serif;
+    /*Daylight Color Scheme*/
+    --MAIN_BACKGROUND_COLOR: #accce5;
+    --SUB_BACKGROUND_COLOR: #374f1b;
+    --MAIN_HIGHLIGHT_1: #d27452;
+    --MAIN_HIGHLIGHT_2: #52415b;
+    --SUB_HIGHLIGHTS_1: #488cc5;
+    --TEXT_ON_LIGHT_COLOR: black;
+    --TEXT_ON_DARK_COLOR: white;
+    /*Nighttime Color Scheme*/
+    /*...to be added later...*/
+    --REG_TRANSITION: .4s;
+    --FAST_TRANSITION: .2s;
+}
+
+* {
+    font-family: var(--ALL_OTHER_TEXT);
+}
+body {
+    margin: 0 var(--EDGES_SMALL);
+    background-image: url('../Assets/images/spring_blossoms_pink.jpeg')
+}
+h2, h3, h4, h5, h6 {
+    font-family: var(--REGULAR_HEADINGS);
+    font-style: italic;
+}
+
+/*-----Sitewide Navigation AKA The "Hamburger" Menu-----*/
+h1 {
+    font-family: var(--FANCY_HEADINGS);
     text-align: center;
+    
+}
+header {
+    height: var(--HEADER_HEIGHT);
+    font-family: var(--REGULAR_HEADINGS);
+}
+header nav ul {
+    display: none;
+    padding: 0;
+    margin: 0;
+    
+}
+header nav.alt ul {
+    display: block;  /*not to self, if desired later add transisiton period and effect*/
+    position: relative;
+    z-index: 2;
 }
 header nav ul a {
     text-decoration: none;
 }
-header nav ul a li, header nav ul li {
+header nav ul a li {
     list-style-type: none;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--REGULAR_HEADINGS);
+    color: var(--TEXT_ON_DARK_COLOR);
+    border-bottom: 2px solid var(--SUB_BACKGROUND_COLOR);
+    background-color: var(--SUB_HIGHLIGHTS_1);
+    white-space: nowrap;
+    font-style: italic;
+    transition: var(--REG_TRANSITION);
+}
+header nav ul a li:hover {
+    background-color: var(--MAIN_HIGHLIGHT_1);
+}
+header nav ul a li:active {
+    background-color: var(--SUB_HIGHLIGHTS_1);
+    border-bottom: none;
+}
+header nav button {
+    background-color: var(--SUB_HIGHLIGHTS_1);
+    color: white;
+    width: 100%;
+    border: none;
+    line-height: 2rem;
+}
+header nav.alt button {
+    background-color: var(--SUB_BACKGROUND_COLOR);
+}
+header nav button:hover {
+    background-color: var(--MAIN_HIGHLIGHT_1);
+}
+header nav button span#hamburger-close-btn,
+header nav button.alt span#hamburger-open-btn {
+    display: none;
+}
+header nav button.alt span#hamburger-close-btn,
+header nav button span#hamburger-open-btn {
+    display: block;
+}
+
+/*-----Sitewide Footer-----*/
+footer {
+    height: var(--FOOTER_HEIGHT);
+}
+footer ul {
+    padding: 0 .5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    
+}
+footer ul li {
+    list-style-type: none;
+    margin: 0 .1rem;
+    font-family: var(--REGULAR_HEADINGS);
+}
+footer ul.align-right {
+    justify-content: right;
 }
 
 
+/*-----Home Page-----*/
+body.home {
+    display: grid;
+}
+
+/*--Slideshow--*/
+/* ditching this for now, sake of time
+body.home main {
+    min-height: calc(100vh - var(--FOOTER_HEIGHT) - var(--HEADER_HEIGHT));
+    
+}*/
+/*max height is by default max-content here, or I would set that*/
+/*main section {
+    display: none;
+    width: 98%;
+} */
+/*Selector*/
 
 
+
+/*Individual Slide*/
+.ss-home {
+    max-width: 98%;
+    min-height: 256px;
+    border: 5px solid var(--SUB_BACKGROUND_COLOR);
+    border-radius: 15vw;
+    margin: 2vh 0;
+    text-align: center;
+}
+.ss-home a {
+    text-decoration: none;
+    color: var(--TEXT_ON_LIGHT_COLOR);
+}
+.ss-home img {
+    max-height: 200px;
+    max-width: calc(100% - var(--EDGES_SMALL) * 2);
+    margin: 0 var(--EDGES_SMALL);
+}
+.ss-home p {
+    margin: 0 calc(var(--EDGES_SMALL) * 1.5) calc(var(--EDGES_SMALL) * 1.5) calc(var(--EDGES_SMALL) * 1.5);
+    /* border-radius: 0 0 15vw 15vw; to be used with shape-outside later*/
+}
+.ss-home h3 {
+    max-width: max-content;
+    /* border-radius: 15vw 15vw 0 0; to be used with shape-outside later*/
+    margin: 1em auto 1em auto;
+    padding: 0 calc(var(--EDGES_SMALL) * 1.5) 0 calc(var(--EDGES_SMALL) * 1.5);
+}
+/*Welcome*/
+
+/*Book Now*/
+section.ss-home#book-now h3 {
+    border: 2px solid var(--SUB_BACKGROUND_COLOR);
+    border-radius: 5px;
+    line-height: 1.5rem;
+    
+    background-color: var(--SUB_HIGHLIGHTS_1);
+    color: white;
+    
+}
+section.ss-home#book-now h3:hover {
+    background-color: var(--MAIN_HIGHLIGHT_2);
+    border: 2px solid var(--MAIN_HIGHLIGHT_2);
+    transition: var(--FAST_TRANSITION);
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 1px black;
+}
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/*Questions*/
+/* body main.home section:nth-child(1) {
+    display: block;
+} */
 
 
 
@@ -21,7 +209,5 @@ header nav ul a li, header nav ul li {
 
 /*-----When the Screen is Extremely small for some odd reason-----*/
 @media(max-width:255px) {
-    * {
-        color: orange;
-    }
+    * {color: orange;}
 }
