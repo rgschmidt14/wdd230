@@ -1,5 +1,15 @@
 @media(min-width: 1024px) {
-* {
-    color: blue;
+/* * {color: blue;} */
+
+/*Home Page*/
+html {
+    font-size: 1.4em;
 }
+header {
+    height: calc(var(--HEADER_HEIGHT) * 2.2);
+}
+header h1 {
+    font-size: 2.2rem;
+}
+
 }

@@ -1,6 +1,6 @@
 /* * {color: greenyellow;} */
 :root {
-    --HEADER_HEIGHT: 150px;
+    --HEADER_HEIGHT: max-width;
     --FOOTER_HEIGHT: 2.5rem;
     --EDGES_SMALL: 2vw;
     --EDGES_LARGE: 10vw;
@@ -33,7 +33,23 @@ h2, h3, h4, h5, h6 {
     font-style: italic;
 }
 
-/*-----Sitewide Navigation AKA The "Hamburger" Menu-----*/
+/*-----Header, Sitewide Navigation AKA The "Hamburger" Menu, and the Severe Weather Warning-----*/
+header #severe-weather-warning {
+    background-color: rgba(255, 0, 0, .9);
+    width: max-content;
+    padding: .25em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 20vh auto;
+    display: none;
+    
+}
+header #severe-weather-warning span button {
+    background: rgba(255, 255, 255, .8);
+}
 h1 {
     font-family: var(--FANCY_HEADINGS);
     text-align: center;
@@ -169,6 +185,7 @@ body.home main {
     margin: 1em auto 1em auto;
     padding: 0 calc(var(--EDGES_SMALL) * 1.5) 0 calc(var(--EDGES_SMALL) * 1.5);
 }
+
 /*Welcome*/
 
 /*Book Now*/

@@ -3,23 +3,26 @@
 
 /*-----Sitewide Header and Footer-----*/
 header {
-    height: calc(var(--HEADER_HEIGHT) * 1.2);
+    height: calc(var(--HEADER_HEIGHT) * 1.4);
+    font-size: larger;
 }
 header nav button#hamBtn {
     display: none;
 }
 header nav ul {
     display: flex;
+    flex-wrap: wrap;
 }
 /*-----Home-----*/
 
 /*--Slideshow turning into scrolling flex/grid--*/
-body.home main section {
-    min-width: 275px;
-    width: 45%;
+body.home main section.ss-home {
+    width: 92.85%;
     border-radius: 75px;
     margin: .75vh .75vw;
-    
+}
+.ss-home:hover {
+    background-color: rgba(255, 255, 255, .25);
 }
 body.home main {
     display: flex;
@@ -28,4 +31,11 @@ body.home main {
 section.ss-home#welcome {
     width: 92.85%;
 }
+
+}
+@media(min-width: 632px) {
+    body.home main section.ss-home {
+        min-width: 275px;
+        width: 45%;
+    }
 }
