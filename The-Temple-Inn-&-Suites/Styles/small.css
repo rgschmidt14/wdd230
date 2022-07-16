@@ -1,7 +1,7 @@
 /* * {color: greenyellow;} */
 :root {
-    --HEADER_HEIGHT: max-width;
-    --FOOTER_HEIGHT: 2.5rem;
+    --HEADER_HEIGHT: max-content;
+    --FOOTER_HEIGHT: max-content;
     --EDGES_SMALL: 2vw;
     --EDGES_LARGE: 10vw;
     --FANCY_HEADINGS: 'Monsieur La Doulaise', cursive;
@@ -26,13 +26,18 @@
 }
 body {
     margin: 0 var(--EDGES_SMALL);
-    background-image: url('../Assets/images/spring_blossoms_pink.jpeg')
+    background-image: url('../Assets/images/spring_blossoms_pink.jpeg');
 }
 h2, h3, h4, h5, h6 {
     font-family: var(--REGULAR_HEADINGS);
     font-style: italic;
 }
-
+span {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+}
 /*-----Header, Sitewide Navigation AKA The "Hamburger" Menu, and the Severe Weather Warning-----*/
 header #severe-weather-warning {
     background-color: rgba(255, 0, 0, .9);
@@ -49,6 +54,13 @@ header #severe-weather-warning {
 }
 header #severe-weather-warning span button {
     background: rgba(255, 255, 255, .8);
+}
+header #header-logo {
+    height: 3.5em;
+    position: absolute;
+    float: left;
+    top: 0;
+    margin: 1vh 0
 }
 h1 {
     font-family: var(--FANCY_HEADINGS);
@@ -116,24 +128,34 @@ header nav button span#hamburger-open-btn {
 }
 
 /*-----Sitewide Footer-----*/
-footer {
-    height: var(--FOOTER_HEIGHT);
+footer div#footer-container-original {
+    justify-items: center;
+    background-color: rgba(255, 255, 255, .85);
 }
+footer #footer-container-1 {
+    height: var(--FOOTER_HEIGHT);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1em 0;
+    border: 2px solid var(--MAIN_HIGHLIGHT_2);
+    width: content;
+    padding: 1vw 7vw;
+}
+
 footer ul {
     padding: 0 .5vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     margin: 0;
-    
+    margin: auto;
 }
+
 footer ul li {
     list-style-type: none;
     margin: 0 .1rem;
     font-family: var(--REGULAR_HEADINGS);
 }
-footer ul.align-right {
-    justify-content: right;
+footer a, footer #copyright {
+    font-family: var(--REGULAR_HEADINGS);
+    font-size: large;
 }
 
 
@@ -166,10 +188,6 @@ body.home main {
     margin: 2vh 0;
     text-align: center;
 }
-.ss-home a {
-    text-decoration: none;
-    color: var(--TEXT_ON_LIGHT_COLOR);
-}
 .ss-home img {
     max-height: 200px;
     max-width: calc(100% - var(--EDGES_SMALL) * 2);
@@ -184,6 +202,11 @@ body.home main {
     /* border-radius: 15vw 15vw 0 0; to be used with shape-outside later*/
     margin: 1em auto 1em auto;
     padding: 0 calc(var(--EDGES_SMALL) * 1.5) 0 calc(var(--EDGES_SMALL) * 1.5);
+}
+.ss-home a {
+    text-decoration: inherit;
+    color: inherit;
+    font-family: inherit;
 }
 
 /*Welcome*/
@@ -226,5 +249,5 @@ section.ss-home#book-now h3:hover {
 
 /*-----When the Screen is Extremely small for some odd reason-----*/
 @media(max-width:255px) {
-    * {color: orange;}
+    /* * {color: orange;} */
 }

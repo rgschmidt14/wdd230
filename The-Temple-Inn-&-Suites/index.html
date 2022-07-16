@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Site & Page Info-->
     <title>Temple Inn & Suites</title>
-    <meta name="description" content="The Temple Inn & Suites is a real business that hosts many members of the Church of Jesus Christ of Latter-day Saints as they have extended stays at many temples around the world. This site however is fictitious and for school assignment purposes. We hope you like what you find!">
+    <meta name="description" content="The Temple Inn & Suites staff and management is dedicated to serving their guests as much as their patrons are dedicated to serving the Lord. With many locations aroudn the world, people can feel safe and at peace in our rooms even when far from home. We built this website to better accomodate your needs and as always feel free to contact us about any questions at any of our connections! Link at the bottom of page.">
     <link rel="shortcut icon" href="Assets/images/golden_bed_old.ico">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,111 +22,89 @@
 <body class="home">
     <header>
         <div id='severe-weather-warning'><span class="dismiss-button" id="dismiss-severe-weather-warning"><button>X</button></span>This is a severe Weather Warning!<br>From <span id='severe-weather-start-date'></span> thru <span id='severe-weather-start-date'></span> watch out for <span id='severe-weather-type'></span>! Thank you.</div>
+        <img id='header-logo' src='Assets/images/placeholder.jpeg' data-src='Assets/images/Temple Inn & Suites-logos_black_cropped.png'>
         <h1>Temple Inn & Suites</h1>
         <nav>
             <button id='hamBtn'><span id='hamburger-open-btn'>☰</span><span id='hamburger-close-btn'>X</span></button>
             <ul>
                 <a href='#'><li>Home</li></a>
-                <a href='#'><li>Temple</li></a>
-                <a href='#'><li>Reservation</li></a>
-                <a href='#'><li>Services</li></a>
-                <a href='#'><li>Contact Us</li></a>
+                <a href='Temple/index.html'><li>Temple</li></a>
+                <a href='Reservation/index.html'><li>Reservation</li></a>
+                <a href='Services/index.html'><li>Services</li></a>
+                <a href='Contact_Us/index.html'><li>Contact Us</li></a>
             </ul>
         </nav>
     </header>
-    <!-- <header>
-        <banner id="severe-weather-warning">This is a severe Weather Warning!<br>From <span id="severe-weather-start-date"></span> thru <span id="severe-weather-start-date"></span> watch out for <span id="severe-weather-type"></span>! Thank you.</banner>
-        <h1>Temple Inn & Suites</h1>
-        <nav>
-            <button id="hamBtn"><span id="hamburger-open-btn">☰</span><span id="hamburger-close-btn">X</span></button>
-            <ul>
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>Temples</li></a>
-                <a href="#"><li>Reservation</li></a>
-                <a href="#"><li>Services</li></a>
-                <a href="#"><li>Contact Us</li></a>
-            </ul>
-        </nav>
-    </header> -->
     <main class="home">
         <!--Welcome to Temple Inn & Suites-->
         <section class="ss-home" id="welcome">
-            <a href="#">
-                <h3>Welcome to Temple Inn & Suites!</h3>
-                <img data-src="Assets/images/js-memorial-building-fs" src="Assets/images/placeholder.jpeg">
-                <p>Let our service ease your service.</p>
-            </a>
+            <h3>Welcome to Temple Inn & Suites!</h3>
+            <img data-src="Assets/images/js-memorial-building-fs" src="Assets/images/placeholder.jpeg">
+            <p>Let our service ease your service.</p>
         </section>
 
 
         <!--Book a Room Now-->
         <section class="ss-home" id="book-now">
-            <a href="#">
-            <h3>Make a Reservation!</h3>
+            <h3><a href="Reservation/index.html">Make a Reservation!</a></h3>
             <img data-src="Assets/images/catering_at_joseph_smith_memorial_building.jpeg" src="Assets/images/placeholder.jpeg">
             <p>Bedrooms & Suites, Complimentary Breakfast, Elegant Reception Hall, Playroom & Daycare Services are Available</p>
-            </a>
         </section>
 
 
         <!--Temple Highlight Info that is fun to know-->
         <section class="ss-home" id="temple-highlight">
-            <a href="#">
             <h3>Temple Highlight</h3>
             <img data-src="Assets/images/placeholder.jpeg" src="Assets/images/placeholder.jpeg">
             <p>interesting fact about that temple</p>
-            </a>
         </section>
 
 
         <!--Current Weather-->
         <section class="ss-home" id="weather-current">
-            <a href="#">
             <h3>Current Weather at <span id="current-weather-location"></span></h3>
             <img data-src="Assets/images/placeholder.jpeg" src="Assets/images/placeholder.jpeg">
             <p>a thought<br>sometemp<br>else</p>
-            </a>
         </section>
 
 
         <!--3-day Forecast-->
         <section class="ss-home" id="weather-three-day">
-            <a href="#">
             <h3>3-day F</h3>
             <img data-src="Assets/images/placeholder.jpeg" src="Assets/images/placeholder.jpeg">
             <p></p>
-            </a>
         </section>
 
 
         <!--Full-time Temple Missionary?-->
         <section class="ss-home" id="full-time-miss">
-            <a href="#">
             <h3>Full-Time Missionaries</h3>
             <img data-src="Assets/images/620-Refugees6.jpg" src="Assets/images/placeholder.jpeg">
             <p>Looking for a more long term residence?</p>
-            </a>
         </section>
 
 
         <!--Questions?-->
         <section class="ss-home" id="questions">
-            <a href="#">
             <h3>Qs</h3>
             <img data-src="Assets/images/spring_blossoms_pink.jpeg" src="Assets/images/placeholder.jpeg">
             <p></p>
-            </a>
         </section>
     </main>
     <footer>
-        <ul>
-            <li>C 2022</li>
-            <li> - </li>
-            <li><a href='#'>Contact Us</a></li>
-            <li> - </li>
-            <li><a href='#'>Location/Map</a></li>
-        </ul>
-        <ul class='align-right'><li><a href='#'>Research Attributions</li></ul>
+        <div id="footer-container-original">
+            <div id="footer-container-1">
+                <ul>
+                    <li id="copyright">© R. Gunnar Schmidt <span class='currentYear'>2022</span></li>
+                    <li><a href='Research_Attributions/index.html'>Research Attributions</a></li>
+                    <li>Last Modified: <span class="lastModified"></span></li>
+                </ul>
+                <ul>
+                    <li>- <a href='Contact_Us/index.html'>Contact Us</a> Call: (123)-555-5555</li>
+                    <li>- Visit: 4800 Montgomery Ln #300, Bethesda, MD 20814 <a href='https://goo.gl/maps/x7rmXcohDrTwP7CX6' target='_blank' rel='noreferrer noopener'>Google Map Link</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
     <script src="Script/site-wide.js" defer></script>
 </body>

@@ -70,3 +70,7 @@ if(IntersectionObserver in window) {
         replaceTheImage(img);
     });
 };
+
+/*Date Last Modified*/
+let dateLastModified = document.lastModified
+document.querySelector(".lastModified").innerHTML = dateLastModified;
