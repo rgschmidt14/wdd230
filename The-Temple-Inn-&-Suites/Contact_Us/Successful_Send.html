@@ -6,7 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <!--Site & Page Info-->
-    <title>Temple Inn & Suites | Contact Us</title>
+    <title>Temple Inn & Suites</title>
     <meta name='description' content='The Temple Inn & Suites staff and management is dedicated to serving their guests as much as their patrons are dedicated to serving the Lord. With many locations around the world, people can feel safe and at peace in our rooms even when far from home. We built this website to better accomodate your needs and as always feel free to contact us about any questions at any of our connections! Link at the bottom of page.'>
     <link rel='shortcut icon' href='../Assets/images/golden_bed_old.ico'>
     <!--fonts-->
@@ -31,25 +31,23 @@
                 <a href='../Temple/index.html'><li>Temple</li></a>
                 <a href='../Reservation/index.html'><li>Reservation</li></a>
                 <a href='../Services/index.html'><li>Services</li></a>
-                <a href='#'><li>Contact Us</li></a>
+                <a href='../Contact_Us/index.html'><li>Contact Us</li></a>
             </ul>
         </nav>
     </header>
-    <main id="contact-us-main">
-        <h2>Contact Us</h2>
-        <form method="get" action="Successful_Send.html">
-            <fieldset>
-                <legend></legend>
-                <label class="label-above">Name: <input type="text" name="name" required></label>
-                <label class="label-above">Email: <input type="email" name="email" required></label>
-                <label class="label-above">Reason for Contacting: <input type="text" name="reason" maxlength="70" required></label>
-                <label class="label-above">Description:<textarea name="description" required></textarea></label>
-                <input id="localTimeSent" type="datetime-local" hidden>
-                <input id="timeSent" type="datetime" hidden>
-                <button class="submitButton" type="submit">Send your Inquiry</button>
-            </fieldset>
-
-        </form>
+    <main id="successful-send-main">
+        <h2>Thank you for contacting Temple Inn & Suites.</h2>
+        <h3 class="center-it">We typically respond within 1 business day.</h3>
+        <h3>If you have additional questions or concerns you can reach us at (123)-555-5555, during regular business hours:</h3>
+        <ul>
+            <li>Monday: 12pm to 9pm,</li>
+            <li>Tuesday-Friday: 7am to 9pm,</li>
+            <li>Saturday*: 7am to 9pm,</li>
+            <li>Sunday**: 12pm to 4pm</li>
+        </ul>
+        <p class="smaller-text">*limited staff after 7pm</p>
+        <p class="smaller-text">**limited staff (all hours), expect longer wait times. To avoid this, please call another day. Thank you.</p>
+        <button class="sitewide-button" id="return-to-contact" onclick="window.location.href='../Contact_Us/index.html'">Return to Contact Page</button>
     </main>
     <footer>
         <div id='footer-container-original'>
@@ -60,7 +58,7 @@
                     <li>Last Modified: <span class='lastModified'></span></li>
                 </ul>
                 <ul>
-                    <li>- <a href='#'>Contact Us</a> Call: (123)-555-5555</li>
+                    <li>- <a href='../Contact_Us/index.html'>Contact Us</a> Call: (123)-555-5555</li>
                     <li>- Visit: 4800 Montgomery Ln #300, Bethesda, MD 20814 <a href='https://goo.gl/maps/x7rmXcohDrTwP7CX6' target='_blank' rel='noreferrer noopener'>Google Map Link</a></li>
                 </ul>
             </div>

@@ -155,7 +155,30 @@ footer ul li {
 }
 footer a, footer #copyright {
     font-family: var(--REGULAR_HEADINGS);
-    font-size: large;
+}
+
+/*-----Additional Sitewide-----*/
+.center-it {
+    text-align: center;
+}
+.sitewide-button {
+    border-radius: 5px;
+    line-height: 1.5rem;
+    background-color: var(--MAIN_HIGHLIGHT_2);
+    border: 2px solid var(--MAIN_HIGHLIGHT_2);
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 1px black;
+    color: var(--TEXT_ON_DARK_COLOR);
+}
+.sitewide-button:hover {
+    transition: var(--FAST_TRANSITION);
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+}
+.label-above input {
+    display: block;
+    padding: .25em;
 }
 
 
@@ -244,7 +267,18 @@ section.ss-home#book-now h3:hover {
 
 
 
+/*-----Contact Us-----*/
+main#contact-us-main form fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
+
+
+/*-----Successful Send-----*/
+main#successful-send-main p.smaller-text {
+    font-size: smaller;
+}
 
 
 /*-----When the Screen is Extremely small for some odd reason-----*/
