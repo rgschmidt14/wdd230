@@ -35,8 +35,46 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="reservation-main">
         <h2>Make or View Your Reservation</h2>
+        <section>
+            <h3>What would you like to do?</h3>
+            <div>
+                <button class="sitewide-button">Make a Reservation</button>
+                <button class="sitewide-button"> View Existing Reservations</button>
+            </div>
+        </section>
+        <section id="make-a-reservation">
+            <h3>Make a Reservation</h3>
+            <form action="Reservation_Made.html">
+                <fieldset>
+                    <legend></legend>
+                    <label class="label-above"><select>
+                        <option disabled selected value>Please choose a room type.</option>
+                        <option value="" required><img alt="" title="" data-src="" src="">Single Bed</option>
+                        <option value=""><img alt="" title="" data-src="" src="">Couple's Bed</option>
+                        <option value=""><img alt="" title="" data-src="" src="">Family (1-2 kids)</option>
+                        <option value=""><img alt="" title="" data-src="" src="">Family (3-5 kids)</option>
+                        <option value=""><img alt="" title="" data-src="" src="">Other or Special Accomodations Needed</option>
+                    </select></label>
+                    <label class="label-above">Full Name: <input type="" name="name" value=""></label>
+                    <label class="label-above"><input type="" name="" value=""></label>
+                    <label class="label-above"><input type="" name="" value=""></label>
+                    <button class="submitButton sitewide-button" type="submit">Make Reservation</button>
+                </fieldset>
+            </form>
+            <figure id="singleBedExample" class=""><img alt="" title="" data-src="../Assets/images/placeholder.jpeg" src="../Assets/images/placeholder.jpeg"><figcaption>Single Bedroom Example</figcaption></figure>
+            <figure id="couplesBedExample" class=""><img alt="" title="" data-src="../Assets/images/placeholder.jpeg" src="../Assets/images/placeholder.jpeg"><figcaption>Couple's Bedroom Example</figcaption></figure>
+            <figure id="family1-2KidsExample" class=""><img alt="" title="" data-src="../Assets/images/placeholder.jpeg" src="../Assets/images/placeholder.jpeg"><figcaption>Family Bedroom Example (1-2 kids)</figcaption></figure>
+            <figure id="family3-5kidsExample" class=""><img alt="" title="" data-src="../Assets/images/placeholder.jpeg" src="../Assets/images/placeholder.jpeg"><figcaption>Family Bedroom Example (3-5 kids)</figcaption></figure>
+            <figure id="otherSpecialExample" class=""><img alt="" title="" data-src="../Assets/images/placeholder.jpeg" src="../Assets/images/placeholder.jpeg"><figcaption>Special Accomodation Example</figcaption></figure>
+        </section>
+        <section id="view-reservations">
+            <h3>View Reservations</h3>
+            <form action="Reservations.html">
+                <legend></legend>
+            </form>
+        </section>
     </main>
     <footer>
         <div id='footer-container-original'>

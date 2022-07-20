@@ -32,10 +32,26 @@ section.ss-home#welcome {
     width: 92.85%;
 }
 
+/*-----Services-----*/
+main#services-main img {
+    height: 180px;
+}
+
 }
 @media(min-width: 632px) {
     body.home main section.ss-home {
         min-width: 275px;
         width: 45%;
+    }
+    /*Reservation*/
+    main#reservation-main section#make-a-reservation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } 
+    main#reservation-main section#make-a-reservation img {
+        height: 200px;
+    }
+    main#reservation-main section#make-a-reservation form {
+        grid-column: 1/2;
     }
 }
