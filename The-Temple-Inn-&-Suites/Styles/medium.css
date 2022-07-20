@@ -39,11 +39,12 @@ main#services-main img {
 
 }
 @media(min-width: 632px) {
+    /*-----Home-----*/
     body.home main section.ss-home {
         min-width: 275px;
         width: 45%;
     }
-    /*Reservation*/
+    /*-----Reservation-----*/
     main#reservation-main section#make-a-reservation {
         display: grid;
         grid-template-columns: 1fr 1fr;

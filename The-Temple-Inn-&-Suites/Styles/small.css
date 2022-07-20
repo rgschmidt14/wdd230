@@ -318,6 +318,10 @@ main#services-main img {
 }
 
 /*-----Reservation-----*/
+body#reservation-body header {
+    margin: auto;
+    width: content;
+}
 main#reservation-main section div button {
     width: 45%;
     height: 5rem;
@@ -336,6 +340,7 @@ main#reservation-main section div {
     display: none;
     grid-column: 2/3;
 }
+
 
 /*-----When the Screen is Extremely small for some odd reason-----*/
 @media(max-width:255px) {
