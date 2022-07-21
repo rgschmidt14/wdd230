@@ -158,13 +158,13 @@ fetch(requestThis)
         const temples = jsonObj['temples'];
         if(currentWindow == '/wdd230/The-Temple-Inn-&-Suites/Temple/index.html', currentWindow == '/The-Temple-Inn-&-Suites/Temple/index.html') {
             temples.forEach(smallCardBuilder)
-        } else if(currentWindow == '/wdd230/The-Temple-Inn-&-Suites/Temple/index.html') {
+        } else if(currentWindow == '/wdd230/The-Temple-Inn-&-Suites/Temple/Lima_Peru.html') {
             temples[0](fullCardBuilder)
-        } else if(currentWindow == '/wdd230/The-Temple-Inn-&-Suites/Temple/index.html') {
+        } else if(currentWindow == '/wdd230/The-Temple-Inn-&-Suites/Temple/Papeete_Tahiti.html') {
             temples[1](fullCardBuilder)
-        } else if(currentWindow == '/wdd230/The-Temple-Inn-&-Suites/Temple/index.html') {
+        } else if(currentWindow == '/wdd230/The-Temple-Inn-&-Suites/Temple/Oakland_California.html') {
             temples[2](fullCardBuilder)
-        } else if(currentWindow == '/wdd230/The-Temple-Inn-&-Suites/Temple/index.html') {
+        } else if(currentWindow == '/wdd230/The-Temple-Inn-&-Suites/Temple/Manila_Philippines.html') {
             temples[3](fullCardBuilder)
         };
     });
