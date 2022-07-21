@@ -350,6 +350,10 @@ main#temple-main img {
 }
 main#temple-main section {
     max-width: 95%;
+    border: 2px solid var(--MAIN_HIGHLIGHT_2);
+    padding: 5%;
+    border-radius: var(--EDGES_SMALL);
+    margin: var(--EDGES_SMALL);
 }
 
 /*-----When the Screen is Extremely small for some odd reason-----*/

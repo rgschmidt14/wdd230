@@ -46,10 +46,6 @@ main#temple-main {
 }
 main#temple-main section {
     max-width: 95%;
-    border: 2px solid var(--MAIN_HIGHLIGHT_2);
-    padding: 5%;
-    border-radius: var(--EDGES_SMALL);
-    margin: var(--EDGES_SMALL);
 }
 main#temple-main section:nth-child(even) {
     grid-column: 1/2;
