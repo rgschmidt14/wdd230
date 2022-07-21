@@ -338,6 +338,9 @@ main#temple-main section {
     border-radius: var(--EDGES_SMALL);
     margin: var(--EDGES_SMALL);
 }
+main#temple-main {
+    text-align: center;
+}
 
 /*-----When the Screen is Extremely small for some odd reason-----*/
 @media(max-width:255px) {

@@ -1,5 +1,6 @@
 /*Checking current window*/
 let currentWindow = window.location.pathname;
+console.log(currentWindow);
 
 
 
@@ -75,3 +76,88 @@ if(IntersectionObserver in window) {
 /*Date Last Modified*/
 let dateLastModified = document.lastModified
 document.querySelector(".lastModified").innerHTML = dateLastModified;
+
+
+
+/*Temples cards builder, one small the other large or 'full'*/
+function smallCardBuilder(temple) {
+    let newsection = document.createElement('section');
+    let newh2 = document.createElement('h2');
+    let newh3 = document.createElement('h3');
+    let newimg = document.createElement('img');
+
+    newh2.innerHTML = temple.name;
+    newsection.appendChild(newh2);
+    newh3.innerHTML = temple.history.One_Liner;
+    newsection.appendChild(newh3);
+    newimg.setAttribute('src', temple.photo);
+    newimg.setAttribute('alt', `Image of the ${temple.name} Temple.`);
+    newimg.setAttribute('loading', 'lazy');
+    newsection.appendChild(newimg);
+
+
+
+    document.querySelector('#temple-main').appendChild(newsection);
+    
+};
+
+function fullCardBuilder(temple, ) {
+    let newsection = document.createElement('section');
+    let newh2 = document.createElement('h2');
+    let newh3 = document.createElement('h3');
+    let newimg = document.createElement('img');
+    let newul1 = document.createElement('ul');
+    let newul2 = document.createElement('ul');
+    let newul3 = document.createElement('ul');
+    let newp = document.createElement('p');
+    let newa = document.createElement('a');
+    let newul4 = document.createElement('ul');
+
+
+
+    function liCompilerWithTitle(title, info) {
+        let newli = document.createElement('li');
+        newli.innerHTML = `<strong>${title}</strong>${info}`;
+        return newli;
+    };
+    function liCompilerWithoutTitle(info) {
+        let newli = document.createElement('li');
+        newli.innerHTML = info;
+        return newli;
+    };
+
+    newh2.innerHTML = temple.name;
+    newsection.appendChild(newh2);
+    newh3.innerHTML = temple.history.One_Liner;
+    newsection.appendChild(newh3);
+    newimg.setAttribute('src', temple.photo);
+    newimg.setAttribute('alt', `Image of the ${temple.name} Temple.`);
+    newimg.setAttribute('loading', 'lazy');
+    newsection.appendChild(newimg);
+
+
+
+    document.querySelector('#temple-sub-main').appendChild(newsection);
+    
+};
+
+let requestThis = '../Assets/JSON/temples_file.json';
+// const cards = ...;
+fetch(requestThis)
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (jsonObj) {
+        const temples = jsonObj['temples'];
+        if(currentWindow == '/wdd230/The-Temple-Inn-&-Suites/Temple/index.html', currentWindow == '/The-Temple-Inn-&-Suites/Temple/index.html') {
+            temples.forEach(smallCardBuilder)
+        } else if(currentWindow == '/wdd230/The-Temple-Inn-&-Suites/Temple/index.html') {
+            temples[0](fullCardBuilder)
+        } else if(currentWindow == '/wdd230/The-Temple-Inn-&-Suites/Temple/index.html') {
+            temples[1](fullCardBuilder)
+        } else if(currentWindow == '/wdd230/The-Temple-Inn-&-Suites/Temple/index.html') {
+            temples[2](fullCardBuilder)
+        } else if(currentWindow == '/wdd230/The-Temple-Inn-&-Suites/Temple/index.html') {
+            temples[3](fullCardBuilder)
+        };
+    });
