@@ -1,5 +1,6 @@
 {"temples":[{
         "name":"Lima Peru",
+        "fullPageRef":"Lima_Peru.html",
         "photo":"../Assets/images/lima_peru_temple_lds.jpeg",
         "address" : ["Av. Javier Prado Este 6420, Urb. Santa Patricia, La Molina, Lima 12, Peru","https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=lima-peru-temple"],
         "telephone" : "(51) 1-612-7200",
@@ -27,6 +28,7 @@
                     "Monday, 2 October 2023 - Monday, 16 October 2023"
                 ]}]},{
         "name": "Papeete Tahiti",
+        "fullPageRef":"Papeete_Tahiti.html",
         "photo":"../Assets/images/papeete_tahiti_temple.jpeg",
         "address" : ["Temple S.D.J. (Mormon) Allee Pierre Loti Papeete, Tahiti 98716, French Polynesia","https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=papeete-tahiti-temple"],
         "telephone" : "(689) 40-50-3939",
@@ -65,6 +67,7 @@
                     "Wednesday, 1 November 2023 (Limited Operations)"
                 ]}]},{
         "name": "Oakland California",
+        "fullPageRef":"Oakland_California.html",
         "photo":"../Assets/images/oakland_california_temple_exterior.jpeg",
         "address" : ["4770 Lincoln Ave, Oakland CA 94602-2535, United States","https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=oakland-california-temple"],
         "telephone" : "(1) 510-531-3200",
@@ -100,6 +103,7 @@
                     "Thursday, 23 November 2023"
                 ]}]},{
         "name":"Manila Philippines",
+        "fullPageRef":"Manila_Philippines.html",
         "photo":"../Assets/images/manila_philippines_temple_lds.jpeg",
         "address" : ["13 Temple Drive corner Whiteplains Avenue, Greenmeadows Subdivision, UGONG NORTE, Quezon City, 1110 Metro Manila, Philippines","https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=manila-philippines-temple"],
         "telephone" : "(63) 2-8635-9111",

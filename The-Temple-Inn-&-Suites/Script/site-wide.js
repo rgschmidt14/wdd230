@@ -85,6 +85,8 @@ function smallCardBuilder(temple) {
     let newh2 = document.createElement('h2');
     let newh3 = document.createElement('h3');
     let newimg = document.createElement('img');
+    let newa1 = document.createElement('a');
+    let newbutton = document.createElement('button');
 
     newh2.innerHTML = temple.name;
     newsection.appendChild(newh2);
@@ -94,6 +96,11 @@ function smallCardBuilder(temple) {
     newimg.setAttribute('alt', `Image of the ${temple.name} Temple.`);
     newimg.setAttribute('loading', 'lazy');
     newsection.appendChild(newimg);
+    newa1.setAttribute('href', temple.fullPageRef)
+    newbutton.setAttribute('class', 'sitewide-button');
+    newbutton.innerHTML = `Click here for more info.`;
+    newa1.appendChild(newbutton)
+    newsection.appendChild(newa1);
 
 
 
@@ -110,7 +117,7 @@ function fullCardBuilder(temple, ) {
     let newul2 = document.createElement('ul');
     let newul3 = document.createElement('ul');
     let newp = document.createElement('p');
-    let newa = document.createElement('a');
+    let newa2 = document.createElement('a');
     let newul4 = document.createElement('ul');
 
 

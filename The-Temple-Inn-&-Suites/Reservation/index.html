@@ -48,7 +48,21 @@
             <form action="Reservation_Made.html">
                 <fieldset>
                     <label class="label-above"><select>
-                        <option disabled selected value>Please choose a room type.</option>
+                        <option disabled selected value>Please choose a Temple</option>
+                        <option value="" required><img alt="" title="" data-src="" src="">Lima Peru</option>
+                        <option value=""><img alt="" title="" data-src="" src="">Manila Philippines</option>
+                        <option value=""><img alt="" title="" data-src="" src="">Oakland California</option>
+                        <option value=""><img alt="" title="" data-src="" src="">Papeete Tahiti</option>
+                    </select></label>
+                    <label class="label-above"><select>
+                        <option disabled selected value>Please choose a service</option>
+                        <option value="" required><img alt="" title="" data-src="" src="">Short-term Overnight Stay</option>
+                        <option value=""><img alt="" title="" data-src="" src="">Long-term Stay</option>
+                        <option value=""><img alt="" title="" data-src="" src="">Wedding Reception Reservation</option>
+                        <option value=""><img alt="" title="" data-src="" src="">Babysitting</option>
+                    </select></label>
+                    <label class="label-above"><select>
+                        <option disabled selected value>Please choose a room type</option>
                         <option value="" required><img alt="" title="" data-src="" src="">Single Bed</option>
                         <option value=""><img alt="" title="" data-src="" src="">Couple's Bed</option>
                         <option value=""><img alt="" title="" data-src="" src="">Family (1-2 kids)</option>
@@ -56,10 +70,13 @@
                         <option value=""><img alt="" title="" data-src="" src="">Other or Special Accomodations Needed</option>
                     </select></label>
                     <label class="label-above">Full Name: <input type="" name="name" value=""></label>
-                    <label class="label-above"><input type="" name="" value=""></label>
-                    <label class="label-above"><input type="" name="" value=""></label>
-                    <button class="submitButton sitewide-button" type="submit">Make Reservation</button>
+                    <label class="label-above">Email:<input type="" name="" value=""></label>
+                    <fieldset>
+                        <label class="label-above">Check in Day<input type="date" name="" value=""></label>
+                        <label class="label-above">Check out Day<input type="date" name="" value=""></label>
+                    </fieldset>
                 </fieldset>
+                <button class="submitButton sitewide-button" type="submit">Make Reservation</button>
             </form>
             <figure id="singleBedExample" class=""><img alt="" title="" data-src="../Assets/images/placeholder.jpeg" src="../Assets/images/placeholder.jpeg"><figcaption>Single Bedroom Example</figcaption></figure>
             <figure id="couplesBedExample" class=""><img alt="" title="" data-src="../Assets/images/placeholder.jpeg" src="../Assets/images/placeholder.jpeg"><figcaption>Couple's Bedroom Example</figcaption></figure>
