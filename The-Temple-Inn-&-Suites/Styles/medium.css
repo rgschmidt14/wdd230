@@ -40,6 +40,20 @@ main#services-main img {
 main#temple-main img {
     max-width: 80%;
 }
+main#temple-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+main#temple-main section {
+    max-width: 95%;
+    border: 2px solid var(--MAIN_HIGHLIGHT_2);
+    padding: 5%;
+    border-radius: var(--EDGES_SMALL);
+    margin: var(--EDGES_SMALL);
+}
+main#temple-main section:nth-child(even) {
+    grid-column: 1/2;
+}
 
 }
 @media(min-width: 632px) {

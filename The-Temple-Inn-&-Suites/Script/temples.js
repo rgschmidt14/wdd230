@@ -1,5 +1,5 @@
 /*Temples cards builder*/
-function cardBuilder(temple) {
+function smallCardBuilder(temple) {
     let newsection = document.createElement('section');
     let newh2 = document.createElement('h2');
     let newh3 = document.createElement('h3');
@@ -47,5 +47,5 @@ fetch(requestThis)
     })
     .then(function (jsonObj) {
         const temples = jsonObj['temples'];
-        temples.forEach(cardBuilder)
+        temples.forEach(smallCardBuilder)
     })
