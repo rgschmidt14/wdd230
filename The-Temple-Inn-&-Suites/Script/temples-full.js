@@ -1,9 +1,27 @@
-/*Temples cards builder*/
-function smallCardBuilder(temple) {
+function fullCardBuilder(temple, ) {
     let newsection = document.createElement('section');
     let newh2 = document.createElement('h2');
     let newh3 = document.createElement('h3');
     let newimg = document.createElement('img');
+    let newul1 = document.createElement('ul');
+    let newul2 = document.createElement('ul');
+    let newul3 = document.createElement('ul');
+    let newp = document.createElement('p');
+    let newa = document.createElement('a');
+    let newul4 = document.createElement('ul');
+
+
+
+    function liCompilerWithTitle(title, info) {
+        let newli = document.createElement('li');
+        newli.innerHTML = `<strong>${title}</strong>${info}`;
+        return newli;
+    };
+    function liCompilerWithoutTitle(info) {
+        let newli = document.createElement('li');
+        newli.innerHTML = info;
+        return newli;
+    };
 
     newh2.innerHTML = temple.name;
     newsection.appendChild(newh2);
@@ -19,7 +37,6 @@ function smallCardBuilder(temple) {
     document.querySelector('#temple-main').appendChild(newsection);
     
 };
-
 let requestThis = '../Assets/JSON/temples_file.json';
 // const cards = ...;
 fetch(requestThis)
@@ -28,6 +45,5 @@ fetch(requestThis)
     })
     .then(function (jsonObj) {
         const temples = jsonObj['temples'];
-        temples.forEach(smallCardBuilder)
-        console.log(window.location.pathname)
+        temples[0](fullCardBuilder)
     });

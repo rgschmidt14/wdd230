@@ -175,8 +175,6 @@ footer a, footer #copyright {
     text-shadow: 1px 1px 3px black;
     box-shadow: 1px 1px 8px black;
     cursor: pointer;
-    border-left: 2px solid black;
-
 }
 .make-it-bigger {
     font-size: calc(1em * 1.1);
@@ -247,7 +245,7 @@ body.home main {
     margin: 0 calc(var(--EDGES_SMALL) * 1.5) calc(var(--EDGES_SMALL) * 1.5) calc(var(--EDGES_SMALL) * 1.5);
     /* border-radius: 0 0 15vw 15vw; to be used with shape-outside later*/
 }
-.ss-home h3 {
+.ss-home h3, section.ss-home#book-now button {
     max-width: max-content;
     /* border-radius: 15vw 15vw 0 0; to be used with shape-outside later*/
     margin: 1em auto 1em auto;
@@ -262,22 +260,7 @@ body.home main {
 /*Welcome*/
 
 /*Book Now*/
-section.ss-home#book-now h3 {
-    border: 2px solid var(--SUB_BACKGROUND_COLOR);
-    border-radius: 5px;
-    line-height: 1.5rem;
-    
-    background-color: var(--SUB_HIGHLIGHTS_1);
-    color: white;
-    
-}
-section.ss-home#book-now h3:hover {
-    background-color: var(--MAIN_HIGHLIGHT_2);
-    border: 2px solid var(--MAIN_HIGHLIGHT_2);
-    transition: var(--FAST_TRANSITION);
-    text-shadow: 1px 1px 1px black;
-    box-shadow: 1px 1px 1px black;
-}
+
 
 /**/
 
