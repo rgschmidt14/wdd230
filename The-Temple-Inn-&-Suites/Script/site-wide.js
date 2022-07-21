@@ -156,6 +156,7 @@ fetch(requestThis)
     })
     .then(function (jsonObj) {
         const temples = jsonObj['temples'];
+        console.log(temples);
         if(currentWindow == '/wdd230/The-Temple-Inn-&-Suites/Temple/index.html', currentWindow == '/The-Temple-Inn-&-Suites/Temple/index.html') {
             temples.forEach(smallCardBuilder)
         } else if(currentWindow == '/wdd230/The-Temple-Inn-&-Suites/Temple/Lima_Peru.html') {
