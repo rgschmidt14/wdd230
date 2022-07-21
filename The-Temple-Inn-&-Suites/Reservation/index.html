@@ -47,21 +47,21 @@
             <h3>Make a Reservation</h3>
             <form action="Reservation_Made.html">
                 <fieldset>
-                    <label class="label-above"><select>
+                    <label class="label-above" id="temple-choose"><select name="temple-choose">
                         <option disabled selected value>Please choose a Temple</option>
                         <option value="lima-peru" required>Lima Peru</option>
                         <option value="manila-philippines">Manila Philippines</option>
                         <option value="oakland-california">Oakland California</option>
                         <option value="papeete-tahiti">Papeete Tahiti</option>
                     </select></label>
-                    <label class="label-above"><select>
+                    <label class="label-above" id="service-choose"><select name="service-choose">
                         <option disabled selected value>Please choose a service</option>
                         <option value="short-term" required>Short-term Overnight Stay</option>
                         <option value="long-term">Long-term Stay</option>
                         <option value="reception">Wedding Reception Reservation</option>
                         <option value="babysit">Babysitting</option>
                     </select></label>
-                    <label class="label-above"><select>
+                    <label class="label-above" id="room-type-choose"><select name="room-type-choose">
                         <option disabled selected value>Please choose a room type</option>
                         <option value="single-bed" required>Single Bed</option>
                         <option value="couples-bed">Couple's Bed</option>
@@ -69,15 +69,18 @@
                         <option value="family3-5">Family (3-5 kids)</option>
                         <option value="other-or-special-accomodation"><img alt="" title="" data-src="" src="">Other or Special Accomodations Needed</option>
                     </select></label>
-                    <label class="label-above">Full Name: <input type="text" name="name" value="full-name"></label>
-                    <label class="label-above">Email:<input type="email" name="email" value="email"></label>
+                    <label class="label-above">Full Name: <input type="text" name="name" value=""></label>
+                    <label class="label-above">Email:<input type="email" name="email" value=""></label>
                     <fieldset>
-                        <label class="label-above">Check in Day<input type="date" name="" value=""></label>
-                        <label class="label-above">Check out Day<input type="date" name="" value=""></label>
+                        <label class="label-above">Check in Day<input type="date" name="check-in" value="check-in"></label>
+                        <label class="label-above">Check out Day<input type="date" name="check-out" value="check-out"></label>
                     </fieldset>
                 </fieldset>
                 <button class="submitButton sitewide-button" type="submit">Make Reservation</button>
             </form>
+            <figure id="singleBedExample" class=""><img alt="" title="" data-src="../Assets/images/placeholder.jpeg" src="../Assets/images/placeholder.jpeg"><figcaption>Wedding Reception Hall with Catering</figcaption></figure>
+            <figure id="singleBedExample" class=""><img alt="" title="" data-src="../Assets/images/placeholder.jpeg" src="../Assets/images/placeholder.jpeg"><figcaption>Wedding Reception Hall without Catering</figcaption></figure>
+            <figure id="singleBedExample" class=""><img alt="" title="" data-src="../Assets/images/placeholder.jpeg" src="../Assets/images/placeholder.jpeg"><figcaption>Babysitting</figcaption></figure>
             <figure id="singleBedExample" class=""><img alt="" title="" data-src="../Assets/images/placeholder.jpeg" src="../Assets/images/placeholder.jpeg"><figcaption>Single Bedroom Example</figcaption></figure>
             <figure id="couplesBedExample" class=""><img alt="" title="" data-src="../Assets/images/placeholder.jpeg" src="../Assets/images/placeholder.jpeg"><figcaption>Couple's Bedroom Example</figcaption></figure>
             <figure id="family1-2KidsExample" class=""><img alt="" title="" data-src="../Assets/images/placeholder.jpeg" src="../Assets/images/placeholder.jpeg"><figcaption>Family Bedroom Example (1-2 kids)</figcaption></figure>
