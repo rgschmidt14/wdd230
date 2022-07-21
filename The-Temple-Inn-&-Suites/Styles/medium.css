@@ -50,6 +50,9 @@ main#temple-main section {
 main#temple-main section:nth-child(even) {
     grid-column: 1/2;
 }
+main#temple-main h2#temple-main-heading {
+    grid-column: 1/-1;
+}
 
 }
 @media(min-width: 632px) {
