@@ -1,6 +1,5 @@
 /*Checking current window*/
 let currentWindow = window.location.pathname;
-console.log(currentWindow);
 
 
 
