@@ -326,6 +326,10 @@ main#reservation-main section div {
     display: none;
     grid-column: 2/3;
 }
+main#reservation-main section#make-a-reservation form button {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
 
 /*-----Temple-----*/
 main#temple-main img {
