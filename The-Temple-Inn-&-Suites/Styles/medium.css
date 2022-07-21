@@ -36,6 +36,10 @@ section.ss-home#welcome {
 main#services-main img {
     height: 180px;
 }
+/*-----Temple-----*/
+main#temple-main img {
+    max-width: 80%;
+}
 
 }
 @media(min-width: 632px) {

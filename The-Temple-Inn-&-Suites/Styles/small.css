@@ -344,6 +344,10 @@ main#reservation-main section div {
     grid-column: 2/3;
 }
 
+/*-----Temple-----*/
+main#temple-main img {
+    max-width: 95%;
+}
 
 /*-----When the Screen is Extremely small for some odd reason-----*/
 @media(max-width:255px) {

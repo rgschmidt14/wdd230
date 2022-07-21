@@ -1,16 +1,16 @@
-{
-    "Lima Peru":{
+{"temples":[{
+        "name":"Lima Peru",
         "photo":"../Assets/images/lima_peru_temple_lds.jpeg",
         "address" : ["Av. Javier Prado Este 6420, Urb. Santa Patricia, La Molina, Lima 12, Peru","https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=lima-peru-temple"],
         "telephone" : "(51) 1-612-7200",
         "email":["Follow Link, sign in if needed, scroll down to email, click link and follow instructions", "https://www.churchofjesuschrist.org/temples/details/lima-peru-temple?lang=eng&.Details_subhead__12J-A"],
         "services":["Clothing rental available","No cafeteria", "Patron housing available", "Distribution center nearby"],
-        "history":[
-            {"Milestones": ["1 April 1981 - Announced", "11 September 1982 - Groundbreaking", "10 January 1986 - Dedicated"]},
-            {"One_Liner": "The first of two temples in Lima Peru will together with the second make Lima the third city in the world to have two temples, right after South Jordan and Provo!"},
-            {"Full_Paragraph": "With only 10,000 sq feet of indoor space, the Peru Lima Temple serves more than 400,000 members in the area 'cercano,' meaning close or nearby. This temple design is actually quite common. Have you seen it before? Gordon B. Hinckley announced many temples quite quickly and many of them were given this design layout."},
-            {"Read_More_Link": "https://en.wikipedia.org/wiki/Lima_Peru_Temple"}
-        ],
+        "history":{
+            "Milestones": ["1 April 1981 - Announced", "11 September 1982 - Groundbreaking", "10 January 1986 - Dedicated"],
+            "One_Liner": "The first of two temples in Lima Peru will together with the second make Lima the third city in the world to have two temples, right after South Jordan and Provo!",
+            "Full_Paragraph": "With only 10,000 sq feet of indoor space, the Peru Lima Temple serves more than 400,000 members in the area 'cercano,' meaning close or nearby. This temple design is actually quite common. Have you seen it before? Gordon B. Hinckley announced many temples quite quickly and many of them were given this design layout.",
+            "Read_More_Link": "https://en.wikipedia.org/wiki/Lima_Peru_Temple"
+        },
         "covid_restriction":"Ordinances available by appointment only. Mask may be required.",
         "ordinance_schedule":["Follow this link, sign in, and select your temple to see ordinance schedule", "https://www.churchofjesuschrist.org/temples/schedule/appointment"],
         "session_schedule":["Follow this link, sign in, and select your temple to see session schedule", "https://www.churchofjesuschrist.org/temples/schedule/appointment"],
@@ -25,20 +25,19 @@
                 "2023":[
                     "Monday, 17 April 2023 - Monday, 1 May 2023",
                     "Monday, 2 October 2023 - Monday, 16 October 2023"
-                ]}]
-    },
-    "Papeete Tahiti":{
+                ]}]},{
+        "name": "Papeete Tahiti",
         "photo":"../Assets/images/papeete_tahiti_temple.jpeg",
         "address" : ["Temple S.D.J. (Mormon) Allee Pierre Loti Papeete, Tahiti 98716, French Polynesia","https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=papeete-tahiti-temple"],
         "telephone" : "(689) 40-50-3939",
         "email":["Follow Link, sign in if needed, scroll down to email, click link and follow instructions", "https://www.churchofjesuschrist.org/temples/details/papeete-tahiti-temple?lang=eng&.Details_subhead__12J-A"],
         "services":["No clothing rental available","No cafeteria", "Patron housing available", "Distribution center nearby"],
-        "history":[
-            {"Milestones": ["2 April 1980 - Announced", "13 February 1981 - Groundbreaking", "27 October 1983 - Dedicated", "12 November 2006 - Rededicated"]},
-            {"One_Liner": "Announced April 2nd, 1980, the Papeete Tahiti Temple is the 25th operating Temple in the Church of Jesus Christ of Latter-day Saints!"},
-            {"Full_Paragraph": "Located in the city of Papeete, the Papeete Tahiti Temple is the only temple for over 14 hundred miles! The single spire design was a modern design at the time. The temple was dedicated October 27th, 1983 by Gordon B. Hinckley and rededicated November 12, 2006 by Apostle L. Tom Perry. An estimated 10,000 Tahitians participated in the rededication along with others invited via satelite broadcast."},
-            {"Read_More_Link": "https://en.wikipedia.org/wiki/Papeete_Tahiti_Temple"}
-        ],
+        "history":{
+            "Milestones": ["2 April 1980 - Announced", "13 February 1981 - Groundbreaking", "27 October 1983 - Dedicated", "12 November 2006 - Rededicated"],
+            "One_Liner": "Announced April 2nd, 1980, the Papeete Tahiti Temple is the 25th operating Temple in the Church of Jesus Christ of Latter-day Saints!",
+            "Full_Paragraph": "Located in the city of Papeete, the Papeete Tahiti Temple is the only temple for over 14 hundred miles! The single spire design was a modern design at the time. The temple was dedicated October 27th, 1983 by Gordon B. Hinckley and rededicated November 12, 2006 by Apostle L. Tom Perry. An estimated 10,000 Tahitians participated in the rededication along with others invited via satelite broadcast.",
+            "Read_More_Link": "https://en.wikipedia.org/wiki/Papeete_Tahiti_Temple"
+        },
         "covid_restriction":"Patrons with appointments will be given priority, but everyone is welcome. Mask may be required.",
         "ordinance_schedule":["Follow this link, sign in, and select your temple to see ordinance schedule", "https://www.churchofjesuschrist.org/temples/schedule/appointment"],
         "session_schedule":["Follow this link, sign in, and select your temple to see session schedule", "https://www.churchofjesuschrist.org/temples/schedule/appointment"],
@@ -64,20 +63,19 @@
                     "Monday, 4 September 2023 - Monday, 18 September 2023",
                     "Saturday, 7 October 2023 - Sunday, 8 October 2023",
                     "Wednesday, 1 November 2023 (Limited Operations)"
-                ]}]
-    },
-    "Oakland California":{
+                ]}]},{
+        "name": "Oakland California",
         "photo":"../Assets/images/oakland_california_temple_exterior.jpeg",
         "address" : ["4770 Lincoln Ave, Oakland CA 94602-2535, United States","https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=oakland-california-temple"],
         "telephone" : "(1) 510-531-3200",
         "email":["Follow Link, sign in if needed, scroll down to email, click link and follow instructions", "https://www.churchofjesuschrist.org/temples/details/oakland-california-temple?lang=eng&.Details_subhead__12J-A"],
         "services":["Visitor's Center nearby", "Clothing rental available","No cafeteria", "Patron housing available", "Distribution center nearby"],
-        "history":[
-            {"Milestones": ["23 January 1961 - Announced", "26 May 1962 - Groundbreaking", "17 November 1964 - Dedicated", "16 June 2019 - Rededicated"]},
-            {"One_Liner": "With half a million lights glowing around the Christmas season, the Oakland California Temple and grounds can be seen all the way from the San Francisco Bay!"},
-            {"Full_Paragraph": "Designed with a combination of Art Deco, and Asian elements, the temple has become a local landmark. Built on 18.3 Acres of land it has room for a Tri-Stake center, Visitor's center and a fountain that runs all the way down from the Temple itself to the end of the walkway, nearly twice as long as the temple itself! The Visitor's center also has a Family History center on the basement level."},
-            {"Read_More_Link": "https://en.wikipedia.org/wiki/Oakland_California_Temple"}
-        ],
+        "history":{
+            "Milestones": ["23 January 1961 - Announced", "26 May 1962 - Groundbreaking", "17 November 1964 - Dedicated", "16 June 2019 - Rededicated"],
+            "One_Liner": "With half a million lights glowing around the Christmas season, the Oakland California Temple and grounds can be seen all the way from the San Francisco Bay!",
+            "Full_Paragraph": "Designed with a combination of Art Deco, and Asian elements, the temple has become a local landmark. Built on 18.3 Acres of land it has room for a Tri-Stake center, Visitor's center and a fountain that runs all the way down from the Temple itself to the end of the walkway, nearly twice as long as the temple itself! The Visitor's center also has a Family History center on the basement level.",
+            "Read_More_Link": "https://en.wikipedia.org/wiki/Oakland_California_Temple"
+        },
         "covid_restriction":"Patrons with appointments will be given priority, but everyone is welcome. Mask may be required.",
         "ordinance_schedule":["Follow this link, sign in, and select your temple to see ordinance schedule", "https://www.churchofjesuschrist.org/temples/schedule/appointment"],
         "session_schedule":["Follow this link, sign in, and select your temple to see session schedule", "https://www.churchofjesuschrist.org/temples/schedule/appointment"],
@@ -100,20 +98,19 @@
                     "Saturday, 7 October 2023",
                     "Wednesday, 22 November 2023 (Limited Operations)",
                     "Thursday, 23 November 2023"
-                ]}]
-    },
-    "Manila Philippines":{
+                ]}]},{
+        "name":"Manila Philippines",
         "photo":"../Assets/images/manila_philippines_temple_lds.jpeg",
         "address" : ["13 Temple Drive corner Whiteplains Avenue, Greenmeadows Subdivision, UGONG NORTE, Quezon City, 1110 Metro Manila, Philippines","https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=manila-philippines-temple"],
         "telephone" : "(63) 2-8635-9111",
         "email":["Follow Link, sign in if needed, scroll down to email, click link and follow instructions", "https://www.churchofjesuschrist.org/temples/details/manila-philippines-temple?lang=eng&.Details_subhead__12J-A"],
         "services":["Clothing rental available","No cafeteria", "Patron housing available", "Distribution center nearby"],
-        "history":[
-            {"Milestones": ["1 April 1981 - Announced", "25 August 1982 - Groundbreaking", "25 September 1984 - Dedicated"]},
-            {"One_Liner": "23 years after the country was dedicated by Gordon B. Hinckley, the Manila Philippines Temple was dedicated. Oh what a joy this must have been!"},
-            {"Full_Paragraph": "'Beginning on December 2, 1989, during the 1989 Philippine coup attempt, rebel forces briefly occupied the temple grounds and some surrounding auxiliary buildings. Dignardino Espi, director of temple security at the time, convinced the rebels not to enter the temple itself. Following a standoff with government troops, the rebels vacated the area on December 4. The temple suffered only superficial damage during the incident.' (Quoted from the 'read more link' below."},
-            {"Read_More_Link": "https://en.wikipedia.org/wiki/Manila_Philippines_Temple"}
-        ],
+        "history":{
+            "Milestones": ["1 April 1981 - Announced", "25 August 1982 - Groundbreaking", "25 September 1984 - Dedicated"],
+            "One_Liner": "23 years after the country was dedicated by Gordon B. Hinckley, the Manila Philippines Temple was dedicated. Oh what a joy this must have been!",
+            "Full_Paragraph": "'Beginning on December 2, 1989, during the 1989 Philippine coup attempt, rebel forces briefly occupied the temple grounds and some surrounding auxiliary buildings. Dignardino Espi, director of temple security at the time, convinced the rebels not to enter the temple itself. Following a standoff with government troops, the rebels vacated the area on December 4. The temple suffered only superficial damage during the incident.' (Quoted from the 'read more link' below.",
+            "Read_More_Link": "https://en.wikipedia.org/wiki/Manila_Philippines_Temple"
+        },
         "covid_restriction":"Ordinances available by appointment only. Mask most likely required.",
         "ordinance_schedule":["Follow this link, sign in, and select your temple to see ordinance schedule", "https://www.churchofjesuschrist.org/temples/schedule/appointment"],
         "session_schedule":["Follow this link, sign in, and select your temple to see session schedule", "https://www.churchofjesuschrist.org/temples/schedule/appointment"],
@@ -129,5 +126,5 @@
                 "2023":[
                     "TBD"
                 ]}]
-    }
+    }]
 }

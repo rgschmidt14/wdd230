@@ -145,7 +145,7 @@ if (current == '/chamber/directory.html', current == '/chamber/index.html') {
 requestURL = "json/data.json";
 const cards = document.querySelector("#directory-cards");
 fetch(requestURL)
-    .then(function (response) {
+    .then(function (responseset) {
         return response.json();
     })
     .then(function (jsonObject) {
