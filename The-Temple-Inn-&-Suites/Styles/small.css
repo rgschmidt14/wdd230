@@ -178,6 +178,9 @@ footer a, footer #copyright {
     border-left: 2px solid black;
 
 }
+.make-it-bigger {
+    font-size: calc(1em * 1.1);
+}
 /*Forms*/
 .label-above input {
     display: block;
@@ -250,7 +253,7 @@ body.home main {
     margin: 1em auto 1em auto;
     padding: 0 calc(var(--EDGES_SMALL) * 1.5) 0 calc(var(--EDGES_SMALL) * 1.5);
 }
-.ss-home a {
+.ss-home h3 a {
     text-decoration: inherit;
     color: inherit;
     font-family: inherit;
