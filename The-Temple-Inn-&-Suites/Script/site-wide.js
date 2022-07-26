@@ -97,7 +97,7 @@ function smallCardBuilder(temple) {
     newsection.appendChild(newimg);
     newa1.setAttribute('href', temple.fullPageRef)
     newbutton.setAttribute('class', 'sitewide-button');
-    newbutton.innerHTML = `Click here for more info.`;
+    newbutton.innerHTML = `Click here for more info`;
     newa1.appendChild(newbutton)
     newsection.appendChild(newa1);
 
